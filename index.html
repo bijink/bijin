@@ -14,11 +14,96 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- /Materialize -->
 
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
       <!-- Custom css -->
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/materialize-style.css">
+      <link rel="stylesheet" href="scss/style.css">
    </head>
 
    <body>
+      <section id="header" class="header">
+         <!-- Toggle btn for side-bar -->
+         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+         <!-- NavBar -->
+         <nav class="nav-bar col right">
+            <div class="nav-wrapper">
+               <ul id="nav-mobile" class="right hide-on-small-only">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#test">test</a></li>
+                  <li><a href="#test">test</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+            </div>
+         </nav>
+      </section>
+
+      <!-- SideBar -->
+      <section class="sideBar">
+         <div class="side-bar left">
+            <ul id="slide-out" class="sidenav z-depth-0">
+               <div class="innerDiv">
+                  <!-- Profile -->
+                  <li>
+                     <div class="user-view">
+                        <!-- <div class="background">
+                        <img src="images/img-1.jpg">
+                        </div> -->
+                        <div class="mainImg">
+                           <div class="profile">
+                              <img class="circle" src="images/img-2.jpg">
+                              <span class="white-text name">Bijin</span>
+                              <span class="white-text email">kbijin528@gmail.com</span>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+
+                  <!-- Links -->
+                  <div class="links" style="margin-top: 11rem;">
+                     <li><a class="subheader">Social</a></li>
+                     <!-- <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li> -->
+                     <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
+                     <li><a class="waves-effect" href="https://github.com/bijink" target="_black"><i class="fab fa-github"></i>Github</a></li>
+                     <li><a class="waves-effect" href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
+                     <!-- <li><a href="#!">Second Link</a></li> -->
+                     <li>
+                        <div class="divider"></div>
+                     </li>
+                     <li><a class="subheader">Works</a></li>
+                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                  </div>
+               </div>
+
+               <!-- Toggle btn for small screen navigation menu -->
+               <div class="scaleToggle hide-on-large-only hide-on-med-only show-on-small">
+                  <a id="toggle" href="#!" class="btn-floating btn">
+                     <i class="material-icons">menu</i>
+                  </a>
+                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                     <i class="material-icons">add</i>
+                  </a>
+                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                     <i class="material-icons">add</i>
+                  </a>
+                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                     <i class="material-icons">add</i>
+                  </a>
+                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                     <i class="material-icons">add</i>
+                  </a>
+                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                     <i class="material-icons">add</i>
+                  </a>
+               </div>
+            </ul>
+         </div>
+      </section>
 
 
       <!-- jquery -->
