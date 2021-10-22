@@ -1,19 +1,20 @@
+@import "../imports/imports";
+
+$sideNav-out-w: 21.4rem;
+$sideNav-w: sideNav-w($sideNav-out-w);
+
 * {
    margin: 0;
    padding: 0;
 }
-
-//Variables
-$base-color: rgb(25, 0, 25);
-$secondary-color: rgb(150, 0, 150);
 
 html {
    scroll-behavior: smooth;
 }
 
 body {
-   background-color: rgb(53, 124, 124);
-   // background-color: $base-color;
+   background-color: $base-color;
+
    .header {
       z-index: 2;
       position: fixed;
@@ -23,13 +24,27 @@ body {
       // height: inherit;
       background-color: chocolate;
       .sidenav-trigger {
-         margin: 1.1rem 0 0 1rem;
+         // margin: 1.1rem 0 0 1rem;
+         margin: 1rem 0 0 1rem;
          z-index: 1;
          position: fixed;
          color: $base-color;
-         // i {
-         //    // font-size: 2rem;
-         // }
+         i {
+            font-size: 2.3rem;
+         }
+      }
+      .nav-bar {
+         .nav-wrapper {
+            & :hover {
+               background-color: transparent;
+            }
+            .nav-mobile {
+               li {
+                  a {
+                  }
+               }
+            }
+         }
       }
    }
 
@@ -41,12 +56,15 @@ body {
          .sidenav {
             -ms-overflow-style: none; /* Internet Explorer 10+ */
             scrollbar-width: none; /* Firefox */
-            width: 23rem;
+            // width: 23rem;
+            // width: 21.4rem;
+            // width: 25.4rem;
+            width: $sideNav-out-w;
             // background-color: transparent;
             background: linear-gradient(
                to right,
                rgb(255, 255, 255) 0%,
-               rgb(255, 255, 255) 20rem,
+               rgb(255, 255, 255) $sideNav-w,
                transparent 80%,
                transparent 100%
             );
@@ -55,12 +73,13 @@ body {
             // transition-timing-function: ease-in-out;
             transition-duration: 300ms;
             .innerDiv {
-               width: 20rem;
+               // width: 20rem;
+               width: $sideNav-w;
                // background-color: white;
                .mainImg {
                   background-image: url("/images/img-10.jpg");
                   background-size: cover;
-                  width: 20rem;
+                  width: $sideNav-w;
                   height: 12rem;
                   position: absolute;
                   top: 0;
@@ -78,7 +97,8 @@ body {
                position: absolute;
                // top: 9.8rem;
                top: 10.6rem;
-               right: 1.5rem;
+               // right: 1.5rem;
+               right: 0;
                display: flex;
                flex-direction: column;
                align-items: center;
@@ -90,65 +110,50 @@ body {
       }
    }
 
-  
-
-//Media query
-@media only screen and (max-width: 600px) {
-   .scaleToggle {
-      display: flex !important;
-   }
-}
-
-@media screen and (max-width: 400px) and (min-width: 300px) {
-   body {
-      .sideBar {
-         .side-bar {
-            .sidenav {
-               width: 18rem;
-               background: linear-gradient(
-                  to right,
-                  rgb(255, 255, 255) 0%,
-                  rgb(255, 255, 255) 15rem,
-                  transparent 80%,
-                  transparent 100%
-               );
-               .innerDiv {
-                  width: 15rem;
-                  .mainImg {
-                     width: 15rem;
-                  }
-               }
-               // .scaleToggle {
-               // }
-            }
+   .home {
+      background-color: rgb(119, 128, 0);
+      // height: calc(100vh - 4rem);
+      height: 100vh;
+      // width: 100%;
+      background-image: url("/images/img-10.jpg");
+      background-size: cover;
+      .profileDetails {
+         color: white;
+         height: 100vh;
+         // height: calc(100vh - 4rem);
+         // text-align: right;
+         position: absolute;
+         top: 12rem;
+         right: 10%;
+         > :nth-child(3) {
+            font-size: 2rem;
          }
       }
    }
-}
 
-@media screen and (max-width: 300px) {
-   body {
-      .sideBar {
-         .side-bar {
-            .sidenav {
-               width: 15.5rem;
-               background: linear-gradient(
-                  to right,
-                  rgb(255, 255, 255) 0%,
-                  rgb(255, 255, 255) 12.5rem,
-                  transparent 80%,
-                  transparent 100%
-               );
-               .innerDiv {
-                  width: 12.5rem;
-                  .mainImg {
-                     width: 12.5rem;
-                  }
-               }
-               // .scaleToggle {
-               // }
-            }
-         }
-      }
+   .about {
+      background-color: chocolate;
+      height: 100vh;
+      // margin: 0 0 2rem 0;
+   }
+
+   .services {
+      background-color: rgb(188, 190, 33);
+      height: 100vh;
+   }
+
+   .works {
+      background-color: rgb(23, 184, 63);
+      height: 100vh;
+   }
+
+   .contact {
+      background-color: rgb(18, 122, 182);
+      height: 100vh;
+   }
+
+   .footer {
+      background-color: rgb(34, 34, 34);
+      height: 5rem;
    }
 }

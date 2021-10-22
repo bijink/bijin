@@ -1,6 +1,6 @@
 $(document).ready(function () {
    $('.sidenav').sidenav({
-      // 'inDuration': 1000
+      'preventScrolling': false
    });
 });
 
@@ -11,9 +11,9 @@ $('#toggle').click(() => (x === 0)
 );
 
 
-setTimeout(() => {
-   $('#slide-out').addClass('sidenav-fixed');
-}, 300);
-setTimeout(() => {
-   $('#slide-out').removeClass('sidenav-fixed');
-}, 1200);
+// setTimeout(() => {
+//    $('#slide-out').addClass('sidenav-fixed');
+// }, 300);
+// setTimeout(() => {
+//    $('#slide-out').removeClass('sidenav-fixed');
+// }, 1200);

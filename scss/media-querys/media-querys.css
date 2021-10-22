@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+  body .header .sidenav-trigger {
+    margin-top: 0.7rem;
+  }
+  .scaleToggle {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-width: 300px) {
+  body .sideBar .side-bar .sidenav {
+    width: 18rem;
+    background: -webkit-gradient(linear, left top, right top, from(white), color-stop(16.6rem, white), color-stop(80%, transparent), to(transparent));
+    background: linear-gradient(to right, white 0%, white 16.6rem, transparent 80%, transparent 100%);
+  }
+  body .sideBar .side-bar .sidenav .innerDiv {
+    width: 16.6rem;
+  }
+  body .sideBar .side-bar .sidenav .innerDiv .mainImg {
+    width: 16.6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body .sideBar .side-bar .sidenav {
+    width: 15rem;
+    background: -webkit-gradient(linear, left top, right top, from(white), color-stop(13.6rem, white), color-stop(80%, transparent), to(transparent));
+    background: linear-gradient(to right, white 0%, white 13.6rem, transparent 80%, transparent 100%);
+  }
+  body .sideBar .side-bar .sidenav .innerDiv {
+    width: 13.6rem;
+  }
+  body .sideBar .side-bar .sidenav .innerDiv .mainImg {
+    width: 13.6rem;
+  }
+}
+/*# sourceMappingURL=media-querys.css.map */

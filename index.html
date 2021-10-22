@@ -14,18 +14,22 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- /Materialize -->
 
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- Font Awesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
       <!-- Custom css -->
       <link rel="stylesheet" href="css/materialize-style.css">
-      <link rel="stylesheet" href="scss/style.css">
+      <link rel="stylesheet" href="scss/styles/styles.css">
+      <link rel="stylesheet" href="scss/media-querys/media-querys.scss">
    </head>
 
    <body>
       <section id="header" class="header">
          <!-- Toggle btn for side-bar -->
-         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+         <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">person</i></a>
 
          <!-- NavBar -->
          <nav class="nav-bar col right">
@@ -33,8 +37,8 @@
                <ul id="nav-mobile" class="right hide-on-small-only">
                   <li><a href="#home">Home</a></li>
                   <li><a href="#about">About</a></li>
-                  <li><a href="#test">test</a></li>
-                  <li><a href="#test">test</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#works">Works</a></li>
                   <li><a href="#contact">Contact</a></li>
                </ul>
             </div>
@@ -46,6 +50,32 @@
          <div class="side-bar left">
             <ul id="slide-out" class="sidenav z-depth-0">
                <div class="innerDiv">
+                  <!-- Toggle btn for small screen navigation menu -->
+                  <div class="scaleToggle hide-on-large-only hide-on-med-only show-on-small">
+                     <a id="toggle" href="#!" class="btn-floating btn">
+                        <i class="material-icons">menu</i>
+                        <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+                        <!-- <i class="material-icons">layers</i> -->
+                        <!-- <i class="material-icons">more_horiz</i> -->
+                        <!-- <i class="material-icons">more_vert</i> -->
+                     </a>
+                     <a id="scale" href="#home" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                        <i class="material-icons">home</i>
+                     </a>
+                     <a id="scale" href="#about" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                        <i class="material-icons">info</i>
+                     </a>
+                     <a id="scale" href="#services" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                        <i class="material-icons">miscellaneous_services</i>
+                     </a>
+                     <a id="scale" href="#works" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                        <i class="material-icons">work</i>
+                     </a>
+                     <a id="scale" href="#contact" class="scaleClass btn-floating btn-small scale-transition scale-out">
+                        <i class="material-icons">chat</i>
+                     </a>
+                  </div>
+
                   <!-- Profile -->
                   <li>
                      <div class="user-view">
@@ -80,31 +110,30 @@
                   </div>
                </div>
 
-               <!-- Toggle btn for small screen navigation menu -->
-               <div class="scaleToggle hide-on-large-only hide-on-med-only show-on-small">
-                  <a id="toggle" href="#!" class="btn-floating btn">
-                     <i class="material-icons">menu</i>
-                  </a>
-                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                     <i class="material-icons">add</i>
-                  </a>
-                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                     <i class="material-icons">add</i>
-                  </a>
-                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                     <i class="material-icons">add</i>
-                  </a>
-                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                     <i class="material-icons">add</i>
-                  </a>
-                  <a id="scale" href="#!" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                     <i class="material-icons">add</i>
-                  </a>
-               </div>
+
             </ul>
          </div>
       </section>
 
+      <section id="home" class="home">
+         <div class="profileDetails  l6">
+            <h5>Hello World, I'm</h5>
+            <h1>Bijin</h1>
+            <h1>A Self Learn Web Developer</h1>
+         </div>
+      </section>
+
+      <section id="about" class="about">
+         fsdfa
+      </section>
+
+
+      <section id="services" class="services"></section>
+      <section id="works" class="works"></section>
+      <section id="contact" class="contact"></section>
+      <section class="footer"></section>
+
+      <!-- ***** ****** -->
 
       <!-- jquery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: #357c7c;
+  background-color: #190019;
 }
 
 body .header {
@@ -20,10 +20,18 @@ body .header {
 }
 
 body .header .sidenav-trigger {
-  margin: 1.1rem 0 0 1rem;
+  margin: 1rem 0 0 1rem;
   z-index: 1;
   position: fixed;
   color: #190019;
+}
+
+body .header .sidenav-trigger i {
+  font-size: 2.3rem;
+}
+
+body .header .nav-bar .nav-wrapper :hover {
+  background-color: transparent;
 }
 
 body .sideBar .side-bar .sidenav::-webkit-scrollbar {
@@ -36,7 +44,7 @@ body .sideBar .side-bar .sidenav {
   /* Internet Explorer 10+ */
   scrollbar-width: none;
   /* Firefox */
-  width: 23rem;
+  width: 21.4rem;
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(20rem, white), color-stop(80%, transparent), to(transparent));
   background: linear-gradient(to right, white 0%, white 20rem, transparent 80%, transparent 100%);
   -webkit-transition-timing-function: ease;
@@ -68,7 +76,7 @@ body .sideBar .side-bar .sidenav .innerDiv .links li a i {
 body .sideBar .side-bar .sidenav .scaleToggle {
   position: absolute;
   top: 10.6rem;
-  right: 1.5rem;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,9 +94,10 @@ body .sideBar .side-bar .sidenav .scaleToggle .scaleClass {
 }
 
 body .home {
+  background-color: #778000;
   height: 100vh;
-  width: 100%;
-  margin: -7rem 0 0 0;
+  background-image: url("/images/img-10.jpg");
+  background-size: cover;
 }
 
 body .home .profileDetails {
@@ -105,43 +114,26 @@ body .home .profileDetails > :nth-child(3) {
 
 body .about {
   background-color: chocolate;
-  width: 100%;
-  height: 40rem;
+  height: 100vh;
 }
 
-@media only screen and (max-width: 600px) {
-  .scaleToggle {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
+body .services {
+  background-color: #bcbe21;
+  height: 100vh;
 }
 
-@media screen and (max-width: 400px) and (min-width: 300px) {
-  body .sideBar .side-bar .sidenav {
-    width: 18rem;
-    background: -webkit-gradient(linear, left top, right top, from(white), color-stop(15rem, white), color-stop(80%, transparent), to(transparent));
-    background: linear-gradient(to right, white 0%, white 15rem, transparent 80%, transparent 100%);
-  }
-  body .sideBar .side-bar .sidenav .innerDiv {
-    width: 15rem;
-  }
-  body .sideBar .side-bar .sidenav .innerDiv .mainImg {
-    width: 15rem;
-  }
+body .works {
+  background-color: #17b83f;
+  height: 100vh;
 }
 
-@media screen and (max-width: 300px) {
-  body .sideBar .side-bar .sidenav {
-    width: 15.5rem;
-    background: -webkit-gradient(linear, left top, right top, from(white), color-stop(12.5rem, white), color-stop(80%, transparent), to(transparent));
-    background: linear-gradient(to right, white 0%, white 12.5rem, transparent 80%, transparent 100%);
-  }
-  body .sideBar .side-bar .sidenav .innerDiv {
-    width: 12.5rem;
-  }
-  body .sideBar .side-bar .sidenav .innerDiv .mainImg {
-    width: 12.5rem;
-  }
+body .contact {
+  background-color: #127ab6;
+  height: 100vh;
 }
-/*# sourceMappingURL=style.css.map */
+
+body .footer {
+  background-color: #222222;
+  height: 5rem;
+}
+/*# sourceMappingURL=styles.css.map */
