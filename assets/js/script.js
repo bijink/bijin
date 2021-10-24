@@ -2,6 +2,10 @@ $(document).ready(function () {
    $('.sidenav').sidenav({
       'preventScrolling': false
    });
+   $('.fixed-action-btn').floatingActionButton({
+      // 'direction': 'bottom',
+      // 'hoverEnabled': false
+   });
 });
 
 let x = 0;

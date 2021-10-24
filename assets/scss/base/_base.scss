@@ -1,0 +1,23 @@
+//* Variables
+$primary-color: rgb(25, 0, 25);
+$secondary-color: rgb(150, 0, 150);
+
+//* Maps
+$sideNav-widths: (
+   "full-350px": 21.4rem,
+   "350px-300px": 18rem,
+   "300px-0px": 15rem,
+);
+
+//* Functions
+@function sideNav-out-width($key) {
+   @return map-get($sideNav-widths, $key);
+}
+
+@function sideNav-in-width($key) {
+   $key-width: map-get($sideNav-widths, $key);
+   @return $key-width - 1.4;
+}
+
+// @debug sideNav-out-width("350px-300px");
+// @debug sideNav-in-width("350px-300px");

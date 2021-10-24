@@ -20,19 +20,18 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
       <!-- Custom css -->
-      <link rel="stylesheet" href="css/materialize-style.css">
-      <link rel="stylesheet" href="scss/styles/styles.css">
-      <link rel="stylesheet" href="scss/media-querys/media-querys.scss">
+      <link rel="stylesheet" href="./assets/css/main.css">
    </head>
 
    <body>
+      <!-- Header (contains: sideBarBtn, navBar) -->
       <section id="header" class="header">
-         <!-- Toggle btn for side-bar -->
+         <!-- Toggle btn for sideBar -->
          <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">person</i></a>
+         <a href="#" data-target="slide-out" class="header__sidebar-trigger sidenav-trigger"><i class="material-icons">person</i></a>
 
          <!-- NavBar -->
-         <nav class="nav-bar col right">
+         <nav class="header__navbar col right">
             <div class="nav-wrapper">
                <ul id="nav-mobile" class="right hide-on-small-only">
                   <li><a href="#home">Home</a></li>
@@ -45,11 +44,12 @@
          </nav>
       </section>
 
-      <!-- SideBar -->
+      <!-- SideBar (contains: sideBar, toggleBtn, links) -->
       <section class="sideBar">
          <div class="side-bar left">
             <ul id="slide-out" class="sidenav z-depth-0">
                <div class="innerDiv">
+
                   <!-- Toggle btn for small screen navigation menu -->
                   <div class="scaleToggle hide-on-large-only hide-on-med-only show-on-small">
                      <a id="toggle" href="#!" class="btn-floating btn">
@@ -76,24 +76,22 @@
                      </a>
                   </div>
 
-                  <!-- Profile -->
+                  <!-- SideBar-Profile -->
                   <li>
                      <div class="user-view">
-                        <!-- <div class="background">
-                        <img src="images/img-1.jpg">
-                        </div> -->
-                        <div class="mainImg">
-                           <div class="profile">
-                              <img class="circle" src="images/img-2.jpg">
-                              <span class="white-text name">Bijin</span>
-                              <span class="white-text email">kbijin528@gmail.com</span>
-                           </div>
+                        <div class="background">
+                           <img src="./assets/img/img-10.jpg" alt="user-bg-img">
+                        </div>
+                        <div class="profile">
+                           <img class="circle" src="./assets/img/img-2.jpg" alt="user-img">
+                           <span class="white-text name">Bijin</span>
+                           <span class="white-text email">kbijin528@gmail.com</span>
                         </div>
                      </div>
                   </li>
 
-                  <!-- Links -->
-                  <div class="links" style="margin-top: 11rem;">
+                  <!-- SideBar-Links -->
+                  <div class="links">
                      <li><a class="subheader">Social</a></li>
                      <!-- <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li> -->
                      <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
@@ -115,7 +113,8 @@
          </div>
       </section>
 
-      <section id="home" class="home">
+      <!-- Home -->
+      <section id="home" class="home" style="background-image: url(./assets/img/img-10.jpg);">
          <div class="profileDetails  l6">
             <h5>Hello World, I'm</h5>
             <h1>Bijin</h1>
@@ -123,8 +122,9 @@
          </div>
       </section>
 
+      <!-- About -->
       <section id="about" class="about">
-         fsdfa
+
       </section>
 
 
@@ -133,14 +133,14 @@
       <section id="contact" class="contact"></section>
       <section class="footer"></section>
 
-      <!-- ***** ****** -->
+      <!-- ********** -->
 
       <!-- jquery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- Materialize : Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <!-- Custom js -->
-      <script src="script.js"></script>
+      <script src="assets/js/script.js"></script>
    </body>
 
 </html>
