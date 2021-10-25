@@ -16,7 +16,8 @@ $sideNav-widths: (
 
 @function sideNav-in-width($key) {
    $key-width: map-get($sideNav-widths, $key);
-   @return $key-width - 1.4;
+   // @return $key-width - 1.4;
+   @return $key-width - 1.75;
 }
 
 // @debug sideNav-out-width("350px-300px");

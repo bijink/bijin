@@ -5,62 +5,109 @@
 
 body,
 html {
-  background-color: #190019;
   scroll-behavior: smooth;
 }
 
+.fixed-action-btn {
+  width: fit-content !important;
+  position: absolute !important;
+  top: 9.7rem !important;
+  right: 0 !important;
+  z-index: 3 !important;
+}
+.fixed-action-btn__toggle-btn {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.fixed-action-btn__toggle-btn .material-icons {
+  color: rgba(0, 0, 0, 0.705) !important;
+  font-size: 2rem !important;
+}
+.fixed-action-btn__floating-btn {
+  width: fit-content !important;
+  position: unset !important;
+  margin: 0 auto !important;
+}
+.fixed-action-btn__floating-btn > * {
+  margin: 0.6rem 0 0 0 !important;
+}
+.fixed-action-btn--home, .fixed-action-btn--about, .fixed-action-btn--services, .fixed-action-btn--works, .fixed-action-btn--contact {
+  width: 38px !important;
+  height: 38px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 !important;
+  z-index: 1 !important;
+  padding: 0 !important;
+}
+.fixed-action-btn--home .material-icons, .fixed-action-btn--about .material-icons, .fixed-action-btn--services .material-icons, .fixed-action-btn--works .material-icons, .fixed-action-btn--contact .material-icons {
+  margin: 0 !important;
+  width: inherit !important;
+  display: inline-block !important;
+  text-align: center !important;
+  color: rgba(0, 0, 0, 0.705) !important;
+  font-size: 1.4rem !important;
+}
+.fixed-action-btn--home .material-icons {
+  font-size: 1.7rem !important;
+}
+
 .header {
-  z-index: 2;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1 !important;
   background-color: chocolate;
 }
-.header .sidenav-trigger {
-  margin: 1rem 0 0 1rem;
-  z-index: 1;
-  position: fixed;
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header__navbar__left--sidebar-trigger-btn {
+  display: unset !important;
   color: #190019;
 }
-.header .sidenav-trigger i {
+.header__navbar__left--sidebar-trigger-btn .material-icons {
   font-size: 2.3rem;
 }
-.header .nav-bar .nav-wrapper :hover {
+.header__navbar__left--sidebar-trigger-btn .material-icons:hover {
+  color: #7c6262;
+}
+.header__navbar__left--name-logo {
+  color: #190019;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+.header__navbar__right :hover {
   background-color: transparent;
 }
-.sideBar .side-bar .sidenav::-webkit-scrollbar {
-  display: none;
-}
-.sideBar .side-bar .sidenav {
-  -ms-overflow-style: none;
+
+.side-bar-wrapper .side-bar .sidenav {
   scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 21.4rem;
-  background: linear-gradient(to right, white 0%, white 20rem, transparent 80%, transparent 100%);
+  background: linear-gradient(to right, white 0%, white 19.65rem, transparent 80%, transparent 100%);
   transition-timing-function: ease;
   transition-duration: 300ms;
 }
-.sideBar .side-bar .sidenav .innerDiv {
-  width: 20rem;
+.side-bar-wrapper .side-bar .sidenav::-webkit-scrollbar {
+  display: none;
 }
-.sideBar .side-bar .sidenav .innerDiv li .user-view .background img {
+.side-bar-wrapper .side-bar .sidenav .side-nav {
+  width: 19.65rem;
+}
+.side-bar-wrapper .side-bar .sidenav .side-nav__profile .background-img img {
   width: 100%;
   height: 100%;
 }
-.sideBar .side-bar .sidenav .innerDiv .links li a i {
+.side-bar-wrapper .side-bar .sidenav .side-nav__links li a i {
   font-size: 1.5rem;
   margin: 0 1rem 0 0;
-}
-.sideBar .side-bar .sidenav .scaleToggle {
-  position: absolute;
-  top: 10.6rem;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 3;
-}
-.sideBar .side-bar .sidenav .scaleToggle .scaleClass {
-  margin: 0.3rem 0 0 0;
 }
 
 .home {
@@ -68,14 +115,14 @@ html {
   height: 100vh;
   background-size: cover;
 }
-.home .profileDetails {
+.home__profile-details {
   color: white;
   height: 100vh;
   position: absolute;
   top: 12rem;
   right: 10%;
 }
-.home .profileDetails > :nth-child(3) {
+.home__profile-details > :nth-child(3) {
   font-size: 2rem;
 }
 
@@ -104,31 +151,22 @@ html {
   height: 5rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .header .sidenav-trigger {
-    margin-top: 0.7rem;
-  }
-
-  .scaleToggle {
-    display: flex !important;
-  }
-}
 @media screen and (max-width: 350px) and (min-width: 300px) {
-  .sideBar .side-bar .sidenav {
+  .side-bar-wrapper .side-bar .sidenav {
     width: 18rem;
-    background: linear-gradient(to right, white 0%, white 16.6rem, transparent 80%, transparent 100%);
+    background: linear-gradient(to right, white 0%, white 16.25rem, transparent 80%, transparent 100%);
   }
-  .sideBar .side-bar .sidenav .innerDiv {
-    width: 16.6rem;
+  .side-bar-wrapper .side-bar .sidenav .side-nav {
+    width: 16.25rem;
   }
 }
 @media screen and (max-width: 300px) {
-  .sideBar .side-bar .sidenav {
+  .side-bar-wrapper .side-bar .sidenav {
     width: 15rem;
-    background: linear-gradient(to right, white 0%, white 13.6rem, transparent 80%, transparent 100%);
+    background: linear-gradient(to right, white 0%, white 13.25rem, transparent 80%, transparent 100%);
   }
-  .sideBar .side-bar .sidenav .innerDiv {
-    width: 13.6rem;
+  .side-bar-wrapper .side-bar .sidenav .side-nav {
+    width: 13.25rem;
   }
 }
 

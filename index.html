@@ -24,16 +24,20 @@
    </head>
 
    <body>
-      <!-- Header (contains: sideBarBtn, navBar) -->
+      <!-- Header (contains: sideBarTriggerBtn, navBar) -->
       <section id="header" class="header">
-         <!-- Toggle btn for sideBar -->
-         <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-         <a href="#" data-target="slide-out" class="header__sidebar-trigger sidenav-trigger"><i class="material-icons">person</i></a>
-
          <!-- NavBar -->
          <nav class="header__navbar col right">
-            <div class="nav-wrapper">
-               <ul id="nav-mobile" class="right hide-on-small-only">
+            <div class="header__navbar__left">
+               <!-- Toggle btn for sideBar -->
+               <a href="#" data-target="slide-out" class="header__navbar__left--sidebar-trigger-btn sidenav-trigger">
+                  <i class="material-icons">person</i>
+               </a>
+               <a href="#home" class="header__navbar__left--name-logo"> BiJiN </a>
+            </div>
+
+            <div class="header__navbar__right nav-wrapper">
+               <ul id="nav-mobile" class="hide-on-small-only">
                   <li><a href="#home">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#services">Services</a></li>
@@ -45,59 +49,43 @@
       </section>
 
       <!-- SideBar (contains: sideBar, toggleBtn, links) -->
-      <section class="sideBar">
+      <section class="side-bar-wrapper">
          <div class="side-bar left">
-            <ul id="slide-out" class="sidenav z-depth-0">
-               <div class="innerDiv">
+            <ul class="sidenav z-depth-0" id="slide-out">
+               <div class="side-nav">
 
-                  <!-- Toggle btn for small screen navigation menu -->
-                  <div class="scaleToggle hide-on-large-only hide-on-med-only show-on-small">
-                     <a id="toggle" href="#!" class="btn-floating btn">
-                        <i class="material-icons">menu</i>
-                        <!-- <i class="material-icons">keyboard_arrow_down</i> -->
-                        <!-- <i class="material-icons">layers</i> -->
-                        <!-- <i class="material-icons">more_horiz</i> -->
-                        <!-- <i class="material-icons">more_vert</i> -->
+                  <!-- Toggle btn to open navigation menu for small screen -->
+                  <div class="fixed-action-btn hide-on-med-only hide-on-large-only show-on-small">
+                     <a class="fixed-action-btn__toggle-btn btn red">
+                        <i class="large material-icons ">menu</i>
                      </a>
-                     <a id="scale" href="#home" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                        <i class="material-icons">home</i>
-                     </a>
-                     <a id="scale" href="#about" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                        <i class="material-icons">info</i>
-                     </a>
-                     <a id="scale" href="#services" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                        <i class="material-icons">miscellaneous_services</i>
-                     </a>
-                     <a id="scale" href="#works" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                        <i class="material-icons">work</i>
-                     </a>
-                     <a id="scale" href="#contact" class="scaleClass btn-floating btn-small scale-transition scale-out">
-                        <i class="material-icons">chat</i>
-                     </a>
+                     <ul class="fixed-action-btn__floating-btn">
+                        <li><a class="fixed-action-btn--contact btn-floating btn blue" href="#contact"><i class="material-icons">chat</i></a></li>
+                        <li><a class="fixed-action-btn--works btn-floating green" href="#works"><i class="material-icons">work</i></a></li>
+                        <li><a class="fixed-action-btn--services btn-floating yellow darken-1" href="#services"><i class="material-icons">miscellaneous_services</i></a></li>
+                        <li><a class="fixed-action-btn--about btn-floating red" href="#about"><i class="material-icons">info</i></a></li>
+                        <li><a class="fixed-action-btn--home btn-floating yellow" href="#home"><i class="material-icons">home</i></a></li>
+                     </ul>
                   </div>
 
                   <!-- SideBar-Profile -->
-                  <li>
-                     <div class="user-view">
-                        <div class="background">
-                           <img src="./assets/img/img-10.jpg" alt="user-bg-img">
-                        </div>
-                        <div class="profile">
-                           <img class="circle" src="./assets/img/img-2.jpg" alt="user-img">
-                           <span class="white-text name">Bijin</span>
-                           <span class="white-text email">kbijin528@gmail.com</span>
-                        </div>
+                  <div class="side-nav__profile user-view">
+                     <div class="background-img background">
+                        <img src="./assets/img/img-10.jpg" alt="user-bg-img">
                      </div>
-                  </li>
+                     <div class="profile-details">
+                        <img class="profile-details--user-img circle" src="./assets/img/img-2.jpg" alt="user-img">
+                        <span class="profile-details--user-name name white-text">Bijin</span>
+                        <span class="profile-details--user-mail email white-text">kbijin528@gmail.com</span>
+                     </div>
+                  </div>
 
                   <!-- SideBar-Links -->
-                  <div class="links">
+                  <div class="side-nav__links">
                      <li><a class="subheader">Social</a></li>
-                     <!-- <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li> -->
                      <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
                      <li><a class="waves-effect" href="https://github.com/bijink" target="_black"><i class="fab fa-github"></i>Github</a></li>
                      <li><a class="waves-effect" href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
-                     <!-- <li><a href="#!">Second Link</a></li> -->
                      <li>
                         <div class="divider"></div>
                      </li>
@@ -107,15 +95,13 @@
                      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
                   </div>
                </div>
-
-
             </ul>
          </div>
       </section>
 
       <!-- Home -->
       <section id="home" class="home" style="background-image: url(./assets/img/img-10.jpg);">
-         <div class="profileDetails  l6">
+         <div class="home__profile-details  l6">
             <h5>Hello World, I'm</h5>
             <h1>Bijin</h1>
             <h1>A Self Learn Web Developer</h1>
@@ -124,6 +110,9 @@
 
       <!-- About -->
       <section id="about" class="about">
+         <!-- <a class="btn-floating btn-large waves-effect waves-light red">
+            <i class="material-icons">add</i>
+         </a> -->
 
       </section>
 
