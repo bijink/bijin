@@ -1,11 +1,11 @@
 @use "../base/base";
 
-//* Header *//
+//* Header
 .header {
    position: fixed;
    top: 0;
    width: 100%;
-   z-index: 1 !important;
+   z-index: 999 !important;
    background-color: chocolate;
    // display: flex;
    // align-items: center;
@@ -48,9 +48,8 @@
       }
    }
 }
-//* /Header *//
 
-//* Side Bar *//
+//* Side Bar
 .side-bar-wrapper {
    $sideNav-out-w: base.sideNav-out-width("full-350px");
    $sideNav-in-w: base.sideNav-in-width("full-350px");
@@ -99,9 +98,8 @@
       }
    }
 }
-//* /Side Bar *//
 
-//* Home Section *//
+//* Home Section
 .home {
    background-color: rgb(119, 128, 0);
    height: 100vh;
@@ -117,39 +115,36 @@
       }
    }
 }
-//* /Home Section *//
 
-//* About Section *//
+//* About Section
 .about {
    background-color: chocolate;
    height: 100vh;
 }
-//* /About Section *//
 
-//* Services Section *//
+//* Services Section
 .services {
    background-color: rgb(188, 190, 33);
    height: 100vh;
+   img {
+      height: 20rem;
+   }
 }
-//* /Services Section *//
 
-//* Works Section *//
+//* Works Section
 .works {
    background-color: rgb(23, 184, 63);
    height: 100vh;
 }
-//* /Works Section *//
 
-//* Contact Section *//
+//* Contact Section
 .contact {
    background-color: rgb(18, 122, 182);
    height: 100vh;
 }
-//* /Contact Section *//
 
-//* Footer Section *//
+//* Footer Section
 .footer {
    background-color: rgb(34, 34, 34);
    height: 5rem;
 }
-//* /Footer Section *//

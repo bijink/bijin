@@ -1,0 +1,34 @@
+{
+	"files": [
+		{
+			"path": "index.html",
+			"bookmarks": [
+				{
+					"line": 27,
+					"column": 3,
+					"label": "header"
+				},
+				{
+					"line": 51,
+					"column": 3,
+					"label": "sideNav"
+				},
+				{
+					"line": 102,
+					"column": 4,
+					"label": "home"
+				},
+				{
+					"line": 111,
+					"column": 5,
+					"label": "about"
+				},
+				{
+					"line": 124,
+					"column": 5,
+					"label": "services"
+				}
+			]
+		}
+	]
+}

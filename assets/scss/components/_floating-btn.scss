@@ -3,7 +3,7 @@
    position: absolute !important;
    top: 9.7rem !important;
    right: 0 !important;
-   z-index: 3 !important;
+   z-index: 998 !important;
 
    &__toggle-btn {
       width: 50px !important;
@@ -38,13 +38,13 @@
       justify-content: center !important;
       align-items: center !important;
       margin: 0 !important;
+      padding: 0 !important;
+      // z-index: 1 !important;
       // color: rgb(255, 0, 0) !important;
       // color: transparent !important;
       // background-color: #000000 !important;
       // background-color: #00000000 !important;
       // background-color: transparent !important;
-      z-index: 1 !important;
-      padding: 0 !important;
 
       .material-icons {
          margin: 0 !important;

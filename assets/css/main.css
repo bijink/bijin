@@ -13,7 +13,7 @@ html {
   position: absolute !important;
   top: 9.7rem !important;
   right: 0 !important;
-  z-index: 3 !important;
+  z-index: 998 !important;
 }
 .fixed-action-btn__toggle-btn {
   width: 50px !important;
@@ -42,7 +42,6 @@ html {
   justify-content: center !important;
   align-items: center !important;
   margin: 0 !important;
-  z-index: 1 !important;
   padding: 0 !important;
 }
 .fixed-action-btn--home .material-icons, .fixed-action-btn--about .material-icons, .fixed-action-btn--services .material-icons, .fixed-action-btn--works .material-icons, .fixed-action-btn--contact .material-icons {
@@ -61,7 +60,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1 !important;
+  z-index: 999 !important;
   background-color: chocolate;
 }
 .header__navbar {
@@ -134,6 +133,9 @@ html {
 .services {
   background-color: #bcbe21;
   height: 100vh;
+}
+.services img {
+  height: 20rem;
 }
 
 .works {
