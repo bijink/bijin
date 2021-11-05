@@ -155,12 +155,38 @@ html {
 
 .works {
   background-color: #17b83f;
-  height: 100vh;
+  padding: 5rem 0 5rem 0;
 }
-
-.contact {
-  background-color: #127ab6;
-  height: 100vh;
+.works--heading {
+  text-align: center;
+}
+.works__carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+}
+.works__carousel .carousel-item--img {
+  width: 370px !important;
+  border-radius: 0.2rem;
+}
+.works__carousel .carousel-item--title {
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.575);
+  color: black;
+  width: 370px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0.2rem 0.2rem;
+}
+.works__carousel .carousel-item--title:hover {
+  background-color: #ffd900;
+}
+.works__carousel .carousel-item:hover > .carousel-item--title {
+  visibility: visible;
+  transition-duration: 800ms;
 }
 
 .footer {

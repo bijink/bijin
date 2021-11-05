@@ -159,13 +159,48 @@
 //* Works Section
 .works {
    background-color: rgb(23, 184, 63);
-   height: 100vh;
-}
-
-//* Contact Section
-.contact {
-   background-color: rgb(18, 122, 182);
-   height: 100vh;
+   // height: 100vh;
+   padding: 5rem 0 5rem 0;
+   &--heading {
+      text-align: center;
+   }
+   &__carousel {
+      // background-color: gray;
+      .carousel-item {
+         display: flex;
+         justify-content: center;
+         &--img {
+            width: base.$carousel-width !important;
+            // width: auto !important;
+            // height: 200px !important;
+            border-radius: 0.2rem;
+            // transition-duration: 5s !important;
+         }
+         &--title {
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0.575);
+            color: black;
+            // width: 200px;
+            width: base.$carousel-width;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 0 0.2rem 0.2rem;
+            // transition-duration: 5s !important;
+            &:hover {
+               background-color: rgb(255, 217, 0);
+               // transition-duration: 5s !important;
+            }
+         }
+         &:hover > .carousel-item--title {
+            visibility: visible;
+            transition-duration: 800ms;
+         }
+      }
+   }
 }
 
 //* Footer Section

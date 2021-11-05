@@ -8,13 +8,17 @@ $(document).ready(function () {
       'direction': 'bottom',
       'hoverEnabled': false,
       // 'toolbarEnabled': true,
-      // 'instance': close()
+      // 'instance': close(),
    });
    $('.carousel').carousel({
       // 'numVisible': 4,
       // 'noWrap': true,
-      'indicators': true
+      'indicators': true,
+      'shift': 70,
+      'dist': -50,
+      // 'padding': 20,
    });
+   $('.carousel').carousel('set', 2);
 });
 
 //* /Materialize jQuery *//

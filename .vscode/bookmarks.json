@@ -9,27 +9,27 @@
 					"label": "header"
 				},
 				{
-					"line": 51,
+					"line": 50,
 					"column": 3,
 					"label": "sideNav"
 				},
 				{
-					"line": 102,
+					"line": 100,
 					"column": 4,
 					"label": "home"
 				},
 				{
-					"line": 111,
+					"line": 109,
 					"column": 5,
 					"label": "about"
 				},
 				{
-					"line": 124,
+					"line": 122,
 					"column": 5,
 					"label": "services"
 				},
 				{
-					"line": 169,
+					"line": 167,
 					"column": 3,
 					"label": "works"
 				}
