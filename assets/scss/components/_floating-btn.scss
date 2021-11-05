@@ -4,7 +4,6 @@
    top: 9.7rem !important;
    right: 0 !important;
    z-index: 998 !important;
-
    &__toggle-btn {
       width: 50px !important;
       height: 50px !important;
@@ -17,7 +16,6 @@
          font-size: 2rem !important;
       }
    }
-
    &__floating-btn {
       width: fit-content !important;
       position: unset !important;
@@ -26,7 +24,6 @@
          margin: 0.6rem 0 0 0 !important;
       }
    }
-
    &--home,
    &--about,
    &--services,
@@ -45,7 +42,6 @@
       // background-color: #000000 !important;
       // background-color: #00000000 !important;
       // background-color: transparent !important;
-
       .material-icons {
          margin: 0 !important;
          width: inherit !important;
@@ -57,7 +53,6 @@
          font-size: 1.4rem !important;
       }
    }
-
    &--home {
       .material-icons {
          font-size: 1.7rem !important;

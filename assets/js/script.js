@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 //* Custom jQuery *//
 
-// To show sideBar like  pop up
+// // To show sideBar like popUp on startUp
 // setTimeout(() => {
 //    $('#slide-out').addClass('sidenav-fixed');
 // }, 300);

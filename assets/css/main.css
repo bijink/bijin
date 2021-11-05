@@ -132,10 +132,25 @@ html {
 
 .services {
   background-color: #bcbe21;
-  height: 100vh;
+  padding: 5rem 0 5rem 0;
 }
-.services img {
-  height: 20rem;
+.services--heading {
+  text-align: center;
+}
+.services__card {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0 0 0;
+}
+.services__card--one, .services__card--two {
+  width: 25rem !important;
+  margin: 0 0.5rem 0 0.5rem !important;
+}
+.services__card--one .card-image img, .services__card--two .card-image img {
+  height: 20rem !important;
+}
+.services__card--one .card-image {
+  padding: 0rem 1rem;
 }
 
 .works {
@@ -153,6 +168,22 @@ html {
   height: 5rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__card--one, .services__card--two {
+    margin: 0 0 2rem 0 !important;
+    width: 25rem !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services__card--one, .services__card--two {
+    width: 85% !important;
+  }
+}
 @media screen and (max-width: 350px) and (min-width: 300px) {
   .side-bar-wrapper .side-bar .sidenav {
     width: 18rem;
