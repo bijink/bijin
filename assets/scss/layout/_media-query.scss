@@ -1,15 +1,6 @@
 @use "../base/base";
 
 @media only screen and (max-width: 600px) {
-   // .header {
-   //    .sidenav-trigger {
-   //       margin-top: 0.7rem;
-   //    }
-   // }
-   // .scaleToggle {
-   //    display: flex !important;
-   // }
-
    //* Services Section
    .services {
       &__card {
@@ -21,6 +12,14 @@
             margin: 0 0 2rem 0 !important;
             width: 25rem !important;
          }
+      }
+   }
+
+   //* Footer Section
+   .footer {
+      height: 3rem;
+      &__row {
+         height: inherit;
       }
    }
 }
@@ -38,6 +37,7 @@
 }
 
 @media screen and (max-width: 350px) and (min-width: 300px) {
+   //* Side Bar
    .side-bar-wrapper {
       $sideNav-out-w: base.sideNav-out-width("350px-300px");
       $sideNav-in-w: base.sideNav-in-width("350px-300px");
@@ -61,6 +61,7 @@
 }
 
 @media screen and (max-width: 300px) {
+   //* Side Bar
    .side-bar-wrapper {
       $sideNav-out-w: base.sideNav-out-width("300px-0px");
       $sideNav-in-w: base.sideNav-in-width("300px-0px");

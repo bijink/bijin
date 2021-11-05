@@ -197,7 +197,7 @@
          }
          &:hover > .carousel-item--title {
             visibility: visible;
-            transition-duration: 800ms;
+            transition-duration: 500ms;
          }
       }
    }
@@ -206,5 +206,35 @@
 //* Footer Section
 .footer {
    background-color: rgb(34, 34, 34);
-   height: 5rem;
+   height: 6rem;
+   &__row {
+      background-color: rgb(34, 34, 34);
+      height: inherit;
+      // margin: 0 !important;
+      &--social-links {
+         // background-color: lightblue;
+         background-color: inherit;
+         height: inherit;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         > * {
+            font-size: 1.8rem;
+            color: rgb(122, 122, 122);
+            margin: 0 1rem;
+            &:hover {
+               color: tomato;
+            }
+         }
+      }
+      &--copy-rights {
+         // background-color: khaki;
+         background-color: inherit;
+         height: inherit;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: rgb(122, 122, 122);
+      }
+   }
 }

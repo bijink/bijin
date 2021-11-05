@@ -186,12 +186,39 @@ html {
 }
 .works__carousel .carousel-item:hover > .carousel-item--title {
   visibility: visible;
-  transition-duration: 800ms;
+  transition-duration: 500ms;
 }
 
 .footer {
   background-color: #222222;
-  height: 5rem;
+  height: 6rem;
+}
+.footer__row {
+  background-color: #222222;
+  height: inherit;
+}
+.footer__row--social-links {
+  background-color: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__row--social-links > * {
+  font-size: 1.8rem;
+  color: #7a7a7a;
+  margin: 0 1rem;
+}
+.footer__row--social-links > *:hover {
+  color: tomato;
+}
+.footer__row--copy-rights {
+  background-color: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7a7a7a;
 }
 
 @media only screen and (max-width: 600px) {
@@ -203,6 +230,13 @@ html {
   .services__card--one, .services__card--two {
     margin: 0 0 2rem 0 !important;
     width: 25rem !important;
+  }
+
+  .footer {
+    height: 3rem;
+  }
+  .footer__row {
+    height: inherit;
   }
 }
 @media screen and (max-width: 450px) {

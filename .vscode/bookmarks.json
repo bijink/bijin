@@ -32,6 +32,11 @@
 					"line": 167,
 					"column": 3,
 					"label": "works"
+				},
+				{
+					"line": 201,
+					"column": 2,
+					"label": "footer"
 				}
 			]
 		}
