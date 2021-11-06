@@ -124,33 +124,47 @@
 .services {
    background-color: rgb(188, 190, 33);
    // height: 100vh;
-   padding: 5rem 0 5rem 0;
+   padding: 4rem 0 5rem 0;
    &--heading {
       text-align: center;
+   }
+   &__desc {
+      text-align: justify;
    }
    &__card {
       // background-color: rgb(103, 104, 36);
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       margin: 2rem 0 0 0;
+      height: 100%;
       &--one,
       &--two {
          width: 25rem !important;
-         margin: 0 0.5rem 0 0.5rem !important;
+         margin: 0 1rem !important;
+         background-color: rgb(192, 174, 153);
          .card-image {
+            // background-color: rgb(165, 135, 96);
             img {
                // background-color: burlywood;
                height: 20rem !important;
             }
          }
          .card-content {
+            // background-color: rgb(153, 112, 63);
          }
          .card-reveal {
+            background-color: rgb(216, 191, 158);
+            text-align: justify;
+            &__more-info {
+               &--read-more {
+                  cursor: pointer;
+               }
+            }
          }
       }
       &--one {
          .card-image {
-            padding: 0rem 1rem;
+            padding: 0 1rem;
          }
       }
    }
@@ -171,33 +185,47 @@
          justify-content: center;
          &--img {
             width: base.$carousel-width !important;
-            // width: auto !important;
-            // height: 200px !important;
             border-radius: 0.2rem;
-            // transition-duration: 5s !important;
          }
          &--title {
             visibility: hidden;
-            background-color: rgba(255, 255, 255, 0.575);
-            color: black;
-            // width: 200px;
+            color: transparent;
             width: base.$carousel-width;
-            height: 40px;
+            height: 0;
             position: absolute;
             bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 0 0 0.2rem 0.2rem;
-            // transition-duration: 5s !important;
-            &:hover {
-               background-color: rgb(255, 217, 0);
-               // transition-duration: 5s !important;
+            overflow: hidden;
+            cursor: default;
+            transition-duration: 500ms;
+            .link-icon {
+               position: absolute;
+               right: 1rem;
+               display: flex;
+               color: transparent;
+               transition-duration: inherit;
+               i {
+                  font-size: 1.5rem;
+               }
             }
          }
          &:hover > .carousel-item--title {
             visibility: visible;
-            transition-duration: 500ms;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+            &:hover {
+               background-color: rgba(255, 255, 255, 0.774);
+            }
+            .link-icon {
+               color: rgb(51, 51, 51);
+               &:hover {
+                  color: black;
+               }
+            }
          }
       }
    }

@@ -35,7 +35,7 @@ html {
 .fixed-action-btn__floating-btn > * {
   margin: 0.6rem 0 0 0 !important;
 }
-.fixed-action-btn--home, .fixed-action-btn--about, .fixed-action-btn--services, .fixed-action-btn--works, .fixed-action-btn--contact {
+.fixed-action-btn--home, .fixed-action-btn--about, .fixed-action-btn--services, .fixed-action-btn--works {
   width: 38px !important;
   height: 38px !important;
   display: flex !important;
@@ -44,7 +44,7 @@ html {
   margin: 0 !important;
   padding: 0 !important;
 }
-.fixed-action-btn--home .material-icons, .fixed-action-btn--about .material-icons, .fixed-action-btn--services .material-icons, .fixed-action-btn--works .material-icons, .fixed-action-btn--contact .material-icons {
+.fixed-action-btn--home .material-icons, .fixed-action-btn--about .material-icons, .fixed-action-btn--services .material-icons, .fixed-action-btn--works .material-icons {
   margin: 0 !important;
   width: inherit !important;
   display: inline-block !important;
@@ -132,25 +132,37 @@ html {
 
 .services {
   background-color: #bcbe21;
-  padding: 5rem 0 5rem 0;
+  padding: 4rem 0 5rem 0;
 }
 .services--heading {
   text-align: center;
 }
+.services__desc {
+  text-align: justify;
+}
 .services__card {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 2rem 0 0 0;
+  height: 100%;
 }
 .services__card--one, .services__card--two {
   width: 25rem !important;
-  margin: 0 0.5rem 0 0.5rem !important;
+  margin: 0 1rem !important;
+  background-color: #c0ae99;
 }
 .services__card--one .card-image img, .services__card--two .card-image img {
   height: 20rem !important;
 }
+.services__card--one .card-reveal, .services__card--two .card-reveal {
+  background-color: #d8bf9e;
+  text-align: justify;
+}
+.services__card--one .card-reveal__more-info--read-more, .services__card--two .card-reveal__more-info--read-more {
+  cursor: pointer;
+}
 .services__card--one .card-image {
-  padding: 0rem 1rem;
+  padding: 0 1rem;
 }
 
 .works {
@@ -170,23 +182,43 @@ html {
 }
 .works__carousel .carousel-item--title {
   visibility: hidden;
-  background-color: rgba(255, 255, 255, 0.575);
-  color: black;
+  color: transparent;
   width: 370px;
-  height: 40px;
+  height: 0;
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 0 0.2rem 0.2rem;
+  overflow: hidden;
+  cursor: default;
+  transition-duration: 500ms;
 }
-.works__carousel .carousel-item--title:hover {
-  background-color: #ffd900;
+.works__carousel .carousel-item--title .link-icon {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  color: transparent;
+  transition-duration: inherit;
+}
+.works__carousel .carousel-item--title .link-icon i {
+  font-size: 1.5rem;
 }
 .works__carousel .carousel-item:hover > .carousel-item--title {
   visibility: visible;
-  transition-duration: 500ms;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+.works__carousel .carousel-item:hover > .carousel-item--title:hover {
+  background-color: rgba(255, 255, 255, 0.774);
+}
+.works__carousel .carousel-item:hover > .carousel-item--title .link-icon {
+  color: #333333;
+}
+.works__carousel .carousel-item:hover > .carousel-item--title .link-icon:hover {
+  color: black;
 }
 
 .footer {

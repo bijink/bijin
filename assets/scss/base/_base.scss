@@ -14,7 +14,6 @@ $sideNav-widths: (
 @function sideNav-out-width($key) {
    @return map-get($sideNav-widths, $key);
 }
-
 @function sideNav-in-width($key) {
    $key-width: map-get($sideNav-widths, $key);
    @return $key-width - 1.75;

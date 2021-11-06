@@ -10,8 +10,8 @@
 				},
 				{
 					"line": 50,
-					"column": 3,
-					"label": "sideNav"
+					"column": 1,
+					"label": "sideBar"
 				},
 				{
 					"line": 100,
@@ -29,13 +29,53 @@
 					"label": "services"
 				},
 				{
-					"line": 167,
+					"line": 180,
 					"column": 3,
 					"label": "works"
 				},
 				{
-					"line": 201,
+					"line": 229,
 					"column": 2,
+					"label": "footer"
+				}
+			]
+		},
+		{
+			"path": "assets/scss/layout/_styles.scss",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "header"
+				},
+				{
+					"line": 51,
+					"column": 0,
+					"label": "sideBar"
+				},
+				{
+					"line": 100,
+					"column": 0,
+					"label": "home"
+				},
+				{
+					"line": 117,
+					"column": 0,
+					"label": "about"
+				},
+				{
+					"line": 123,
+					"column": 0,
+					"label": "services"
+				},
+				{
+					"line": 173,
+					"column": 0,
+					"label": "works"
+				},
+				{
+					"line": 234,
+					"column": 0,
 					"label": "footer"
 				}
 			]

@@ -21,8 +21,6 @@ $(document).ready(function () {
    $('.carousel').carousel('set', 2);
 });
 
-//* /Materialize jQuery *//
-
 
 //* Custom jQuery *//
 
@@ -33,5 +31,3 @@ $(document).ready(function () {
 // setTimeout(() => {
 //    $('#slide-out').removeClass('sidenav-fixed');
 // }, 1200);
-
-//* /Custom jQuery *//
