@@ -19,6 +19,10 @@ $(document).ready(function () {
       // 'padding': 20,
    });
    $('.carousel').carousel('set', 2);
+   $('.scrollspy').scrollSpy({
+      // 'throttle': 100,
+      'scrollOffset': 0,
+   });
 });
 
 

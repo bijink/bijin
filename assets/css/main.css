@@ -127,7 +127,19 @@ html {
 
 .about {
   background-color: chocolate;
-  height: 100vh;
+  padding: 4rem 0 1rem 0;
+}
+.about--heading {
+  text-align: center;
+}
+.about__desc {
+  text-align: justify;
+}
+.about__chips {
+  margin: 2rem 0 0 0;
+}
+.about__chips > * {
+  margin: 0 1rem 0.5rem 0;
 }
 
 .services {

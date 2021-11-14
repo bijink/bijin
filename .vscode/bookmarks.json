@@ -5,37 +5,37 @@
 			"bookmarks": [
 				{
 					"line": 27,
-					"column": 3,
+					"column": 0,
 					"label": "header"
 				},
 				{
 					"line": 50,
-					"column": 1,
-					"label": "sideBar"
+					"column": 0,
+					"label": "side-bar"
 				},
 				{
 					"line": 100,
-					"column": 4,
+					"column": 0,
 					"label": "home"
 				},
 				{
 					"line": 109,
-					"column": 5,
+					"column": 0,
 					"label": "about"
 				},
 				{
-					"line": 122,
-					"column": 5,
+					"line": 137,
+					"column": 0,
 					"label": "services"
 				},
 				{
-					"line": 180,
-					"column": 3,
+					"line": 195,
+					"column": 0,
 					"label": "works"
 				},
 				{
-					"line": 229,
-					"column": 2,
+					"line": 244,
+					"column": 0,
 					"label": "footer"
 				}
 			]
@@ -51,7 +51,7 @@
 				{
 					"line": 51,
 					"column": 0,
-					"label": "sideBar"
+					"label": "side-bar"
 				},
 				{
 					"line": 100,
@@ -64,17 +64,17 @@
 					"label": "about"
 				},
 				{
-					"line": 123,
+					"line": 141,
 					"column": 0,
 					"label": "services"
 				},
 				{
-					"line": 173,
+					"line": 191,
 					"column": 0,
 					"label": "works"
 				},
 				{
-					"line": 234,
+					"line": 252,
 					"column": 0,
 					"label": "footer"
 				}
