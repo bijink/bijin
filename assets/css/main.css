@@ -65,29 +65,47 @@ html {
   top: 0;
   width: 100%;
   z-index: 999 !important;
-  background-color: chocolate;
 }
 .header__navbar {
+  background-color: #0a0a0a;
   display: flex;
   justify-content: space-between;
 }
 .header__navbar__left--sidebar-trigger-btn {
   display: unset !important;
-  color: #1f1f1f;
+  color: #c8c8c8;
 }
 .header__navbar__left--sidebar-trigger-btn .material-icons {
   font-size: 2.3rem;
 }
 .header__navbar__left--sidebar-trigger-btn .material-icons:hover {
-  color: #7c6262;
+  color: white;
 }
 .header__navbar__left--name-logo {
-  color: #1f1f1f;
-  font-size: 1.4rem;
+  float: left;
+  color: #c8c8c8;
+  font-size: 2rem;
   letter-spacing: 0.5rem;
+  cursor: default;
+  font-family: "Genos", sans-serif !important;
 }
-.header__navbar__right :hover {
-  background-color: transparent;
+.header__navbar__right .nav-links li a {
+  color: #969696;
+  padding: 0 1rem !important;
+  font-weight: 500;
+  font-family: "Aldrich", sans-serif;
+}
+.header__navbar__right .nav-links li a:hover {
+  border: none !important;
+  padding: 0 1rem !important;
+  color: #c8c8c8;
+}
+.header__navbar__right .nav-links li a.active {
+  border: none !important;
+  color: white;
+}
+.header__navbar__right .nav-links li:last-child {
+  padding-right: 1rem !important;
 }
 
 .side-bar-wrapper .side-bar .sidenav {

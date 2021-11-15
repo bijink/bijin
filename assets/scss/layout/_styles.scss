@@ -6,43 +6,50 @@
    top: 0;
    width: 100%;
    z-index: 999 !important;
-   background-color: chocolate;
-   // display: flex;
-   // align-items: center;
-   // justify-content: center;
    &__navbar {
+      background-color: rgb(10, 10, 10);
       display: flex;
       justify-content: space-between;
       &__left {
-         // background-color: chocolate;
          &--sidebar-trigger-btn {
             display: unset !important;
-            color: base.$primary-color;
-            // color: rgb(130, 248, 228);
-            // margin: 1rem 0 0 1rem;
-            // margin: 1rem 0 0 111rem;
-            // z-index: 1;
-            // position: fixed;
-            // position: relative;
+            color: base.$secondary-color;
             .material-icons {
                font-size: 2.3rem;
                &:hover {
-                  color: rgb(124, 98, 98);
+                  color: rgb(255, 255, 255);
                }
             }
          }
          &--name-logo {
-            // background-color: rgb(255, 255, 255);
-            // float: left;
-            color: base.$primary-color;
-            font-size: 1.4rem;
+            float: left;
+            color: base.$secondary-color;
+            font-size: 2rem;
             letter-spacing: 0.5rem;
-            // margin: auto 1rem;
+            cursor: default;
+            font-family: base.$font-genos !important;
          }
       }
       &__right {
-         & :hover {
-            background-color: transparent;
+         .nav-links li {
+            & a {
+               color: rgb(150, 150, 150);
+               padding: 0 1rem !important;
+               font-weight: 500;
+               font-family: base.$font-aldrich;
+               &:hover {
+                  border: none !important;
+                  padding: 0 1rem !important;
+                  color: rgb(200, 200, 200);
+               }
+               &.active {
+                  border: none !important;
+                  color: rgb(255, 255, 255);
+               }
+            }
+            &:last-child {
+               padding-right: 1rem !important;
+            }
          }
       }
    }
@@ -110,14 +117,14 @@
       position: sticky;
       top: 12rem;
       margin: 0 0 2.5rem 5%;
-      font-family: "Aldrich", sans-serif;
+      font-family: base.$font-aldrich;
       color: white;
       .hello {
          font-size: 1.3rem;
       }
       .name {
          margin: 0 0 1rem -4px;
-         font-family: "Genos", sans-serif !important;
+         font-family: base.$font-genos !important;
          font-size: 5rem;
          span {
             font-size: 3.7rem;

@@ -9,32 +9,32 @@
 					"label": "header"
 				},
 				{
-					"line": 48,
+					"line": 47,
 					"column": 0,
 					"label": "side-bar"
 				},
 				{
-					"line": 98,
+					"line": 97,
 					"column": 0,
 					"label": "home"
 				},
 				{
-					"line": 108,
+					"line": 107,
 					"column": 0,
 					"label": "about"
 				},
 				{
-					"line": 136,
+					"line": 135,
 					"column": 0,
 					"label": "services"
 				},
 				{
-					"line": 194,
+					"line": 193,
 					"column": 0,
 					"label": "works"
 				},
 				{
-					"line": 243,
+					"line": 242,
 					"column": 0,
 					"label": "footer"
 				}
@@ -44,32 +44,32 @@
 			"path": "assets/scss/layout/_styles.scss",
 			"bookmarks": [
 				{
-					"line": 51,
+					"line": 59,
 					"column": 0,
 					"label": "side-bar"
 				},
 				{
-					"line": 100,
+					"line": 108,
 					"column": 0,
 					"label": "home"
 				},
 				{
-					"line": 138,
+					"line": 146,
 					"column": 0,
 					"label": "about"
 				},
 				{
-					"line": 160,
+					"line": 168,
 					"column": 0,
 					"label": "services"
 				},
 				{
-					"line": 211,
+					"line": 219,
 					"column": 0,
 					"label": "works"
 				},
 				{
-					"line": 271,
+					"line": 279,
 					"column": 0,
 					"label": "footer"
 				}
