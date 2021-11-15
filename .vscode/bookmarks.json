@@ -4,37 +4,37 @@
 			"path": "index.html",
 			"bookmarks": [
 				{
-					"line": 27,
+					"line": 25,
 					"column": 0,
 					"label": "header"
 				},
 				{
-					"line": 50,
+					"line": 48,
 					"column": 0,
 					"label": "side-bar"
 				},
 				{
-					"line": 100,
+					"line": 98,
 					"column": 0,
 					"label": "home"
 				},
 				{
-					"line": 109,
+					"line": 108,
 					"column": 0,
 					"label": "about"
 				},
 				{
-					"line": 137,
+					"line": 136,
 					"column": 0,
 					"label": "services"
 				},
 				{
-					"line": 195,
+					"line": 194,
 					"column": 0,
 					"label": "works"
 				},
 				{
-					"line": 244,
+					"line": 243,
 					"column": 0,
 					"label": "footer"
 				}
@@ -43,11 +43,6 @@
 		{
 			"path": "assets/scss/layout/_styles.scss",
 			"bookmarks": [
-				{
-					"line": 3,
-					"column": 0,
-					"label": "header"
-				},
 				{
 					"line": 51,
 					"column": 0,
@@ -59,22 +54,22 @@
 					"label": "home"
 				},
 				{
-					"line": 117,
+					"line": 138,
 					"column": 0,
 					"label": "about"
 				},
 				{
-					"line": 141,
+					"line": 160,
 					"column": 0,
 					"label": "services"
 				},
 				{
-					"line": 191,
+					"line": 211,
 					"column": 0,
 					"label": "works"
 				},
 				{
-					"line": 252,
+					"line": 271,
 					"column": 0,
 					"label": "footer"
 				}

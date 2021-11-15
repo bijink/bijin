@@ -1,5 +1,7 @@
 // sass -w assets/scss/main.scss assets/css/main.css
 
+@use "./base/global";
+
 @use "./base/reset";
 
 @use "./base/base";

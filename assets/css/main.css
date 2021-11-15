@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Antic+Slab&family=Aref+Ruqaa:wght@400;700&family=Buda:wght@300&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Unicase:wght@400;500;600;700&family=Cormorant+Upright:wght@500;600;700&family=El+Messiri:wght@400;500&family=Genos:wght@300;400;500&family=Italiana&family=Marcellus+SC&family=Mate+SC&family=Orbitron:wght@400;500&family=Philosopher:ital@0;1&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Changa:wght@300;400;500;600&family=Exo+2:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&family=Montserrat+Alternates:wght@500;600;700&family=Play:wght@400;700&family=Rajdhani:wght@400;500;600&family=Saira+Condensed:wght@300;400;500&family=Teko:wght@300;400;500&family=Yanone+Kaffeesatz:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,8 @@
 body,
 html {
   scroll-behavior: smooth;
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .fixed-action-btn {
@@ -69,7 +73,7 @@ html {
 }
 .header__navbar__left--sidebar-trigger-btn {
   display: unset !important;
-  color: #190019;
+  color: #1f1f1f;
 }
 .header__navbar__left--sidebar-trigger-btn .material-icons {
   font-size: 2.3rem;
@@ -78,7 +82,7 @@ html {
   color: #7c6262;
 }
 .header__navbar__left--name-logo {
-  color: #190019;
+  color: #1f1f1f;
   font-size: 1.4rem;
   letter-spacing: 0.5rem;
 }
@@ -110,27 +114,47 @@ html {
 }
 
 .home {
-  background-color: #778000;
-  height: 100vh;
+  height: 115vh;
+  background-image: url("/assets/img/home__banner.jpg");
   background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.home__profile-details {
-  color: white;
-  height: 100vh;
-  position: absolute;
+.home__profile-intro {
+  position: sticky;
   top: 12rem;
-  right: 10%;
+  margin: 0 0 2.5rem 5%;
+  font-family: "Aldrich", sans-serif;
+  color: white;
 }
-.home__profile-details > :nth-child(3) {
-  font-size: 2rem;
+.home__profile-intro .hello {
+  font-size: 1.3rem;
+}
+.home__profile-intro .name {
+  margin: 0 0 1rem -4px;
+  font-family: "Genos", sans-serif !important;
+  font-size: 5rem;
+}
+.home__profile-intro .name span {
+  font-size: 3.7rem;
+}
+.home__profile-intro .title {
+  font-size: 1.7rem;
+}
+.home__fade-shadow {
+  background-image: linear-gradient(180deg, transparent, transparent, #1f1f1f);
+  height: 15vh;
+  margin: 0 0 -1rem 0;
 }
 
 .about {
-  background-color: chocolate;
   padding: 4rem 0 1rem 0;
 }
 .about--heading {
-  text-align: center;
+  font-family: "Cairo", sans-serif;
+  margin: 3rem 0;
 }
 .about__desc {
   text-align: justify;
@@ -143,11 +167,12 @@ html {
 }
 
 .services {
-  background-color: #bcbe21;
   padding: 4rem 0 5rem 0;
 }
 .services--heading {
-  text-align: center;
+  text-align: end;
+  font-family: "Cairo", sans-serif;
+  margin: 3rem 0;
 }
 .services__desc {
   text-align: justify;
@@ -178,11 +203,10 @@ html {
 }
 
 .works {
-  background-color: #17b83f;
-  padding: 5rem 0 5rem 0;
+  padding: 4rem 0 3rem 0;
 }
 .works--heading {
-  text-align: center;
+  font-family: "Cairo", sans-serif;
 }
 .works__carousel .carousel-item {
   display: flex;

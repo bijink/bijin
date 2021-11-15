@@ -99,30 +99,49 @@
 
 //* Home Section
 .home {
-   background-color: rgb(119, 128, 0);
-   height: 100vh;
+   height: 115vh;
+   background-image: url("/assets/img/home__banner.jpg");
    background-size: cover;
-   &__profile-details {
-      color: white;
-      height: 100vh;
-      position: absolute;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   &__profile-intro {
+      position: sticky;
       top: 12rem;
-      right: 10%;
-      > :nth-child(3) {
-         font-size: 2rem;
+      margin: 0 0 2.5rem 5%;
+      font-family: "Aldrich", sans-serif;
+      color: white;
+      .hello {
+         font-size: 1.3rem;
       }
+      .name {
+         margin: 0 0 1rem -4px;
+         font-family: "Genos", sans-serif !important;
+         font-size: 5rem;
+         span {
+            font-size: 3.7rem;
+         }
+      }
+      .title {
+         font-size: 1.7rem;
+      }
+   }
+   &__fade-shadow {
+      // background-color: rgba(95, 158, 160, 0.342);
+      background-image: linear-gradient(180deg, transparent, transparent, rgb(31, 31, 31));
+      height: 15vh;
+      margin: 0 0 -1rem 0;
    }
 }
 
 //* About Section
 .about {
-   background-color: chocolate;
-   // height: 100vh;
-   // padding: 4rem 0 0 0;
+   // background-color: chocolate;
    padding: 4rem 0 1rem 0;
-   // margin: 4rem 0 0 0;
    &--heading {
-      text-align: center;
+      font-family: base.$section-heading-font;
+      margin: 3rem 0;
    }
    &__desc {
       text-align: justify;
@@ -140,11 +159,12 @@
 
 //* Services Section
 .services {
-   background-color: rgb(188, 190, 33);
-   // height: 100vh;
+   // background-color: rgb(188, 190, 33);
    padding: 4rem 0 5rem 0;
    &--heading {
-      text-align: center;
+      text-align: end;
+      font-family: base.$section-heading-font;
+      margin: 3rem 0;
    }
    &__desc {
       text-align: justify;
@@ -190,11 +210,10 @@
 
 //* Works Section
 .works {
-   background-color: rgb(23, 184, 63);
-   // height: 100vh;
-   padding: 5rem 0 5rem 0;
+   // background-color: rgb(23, 184, 63);
+   padding: 4rem 0 3rem 0;
    &--heading {
-      text-align: center;
+      font-family: base.$section-heading-font;
    }
    &__carousel {
       // background-color: gray;
