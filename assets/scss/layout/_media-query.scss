@@ -19,7 +19,13 @@
    .footer {
       height: 3rem;
       &__row {
-         height: inherit;
+         &--social-links {
+            margin: 0.7rem 0 0 0;
+            > * {
+               font-size: 1.7rem;
+               margin: 0 0.6rem;
+            }
+         }
       }
    }
 }

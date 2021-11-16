@@ -289,14 +289,13 @@
 
 //* Footer Section
 .footer {
-   background-color: rgb(34, 34, 34);
+   background-color: rgb(22, 22, 22);
+   color: rgb(150, 150, 150);
    height: 6rem;
    &__row {
-      background-color: rgb(34, 34, 34);
+      background-color: inherit;
       height: inherit;
-      // margin: 0 !important;
       &--social-links {
-         // background-color: lightblue;
          background-color: inherit;
          height: inherit;
          display: flex;
@@ -304,21 +303,24 @@
          align-items: center;
          > * {
             font-size: 1.8rem;
-            color: rgb(122, 122, 122);
+            color: inherit;
             margin: 0 1rem;
             &:hover {
-               color: tomato;
+               color: rgb(200, 200, 200);
             }
          }
       }
-      &--copy-rights {
-         // background-color: khaki;
+      &--copyright {
          background-color: inherit;
          height: inherit;
          display: flex;
          justify-content: center;
          align-items: center;
-         color: rgb(122, 122, 122);
+         font-family: base.$font-aldrich;
+         span {
+            font-size: 1.25rem;
+            margin: 0 0.3rem;
+         }
       }
    }
 }
