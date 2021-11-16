@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../base/base";
 
 @media only screen and (max-width: 600px) {
@@ -30,6 +31,33 @@
    }
 }
 
+@media only screen and (max-width: 500px) {
+   //* Works Section
+   .works {
+      $carousel-width: map.get(base.$carousel-widths, "max_500px");
+      $carousel-height: map.get(base.$carousel-heights, "max_500px");
+
+      &__carousel {
+         margin: -4rem 0 -3rem 0 !important;
+         .carousel-item {
+            height: $carousel-height !important;
+            &--img {
+               width: $carousel-width !important;
+            }
+            &--title {
+               width: $carousel-width;
+            }
+            &:hover > .carousel-item--title {
+               height: 35px;
+            }
+         }
+         .indicators {
+            bottom: 3rem !important;
+         }
+      }
+   }
+}
+
 @media screen and (max-width: 450px) {
    //* Services Section
    .services {
@@ -37,6 +65,29 @@
          &--one,
          &--two {
             width: 85% !important;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 350px) {
+   //* Works Section
+   .works {
+      $carousel-width: map.get(base.$carousel-widths, "max_350px");
+      $carousel-height: map.get(base.$carousel-heights, "max_350px");
+
+      &__carousel {
+         .carousel-item {
+            height: $carousel-height !important;
+            &--img {
+               width: $carousel-width !important;
+            }
+            &--title {
+               width: $carousel-width;
+            }
+         }
+         .indicators {
+            bottom: 5rem !important;
          }
       }
    }

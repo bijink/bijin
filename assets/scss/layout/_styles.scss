@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../base/base";
 
 //* Header
@@ -13,17 +14,17 @@
       &__left {
          &--sidebar-trigger-btn {
             display: unset !important;
-            color: base.$secondary-color;
+            color: base.$secondary-color_200;
             .material-icons {
                font-size: 2.3rem;
                &:hover {
-                  color: rgb(255, 255, 255);
+                  color: base.$secondary-color_250;
                }
             }
          }
          &--name-logo {
             float: left;
-            color: base.$secondary-color;
+            color: base.$secondary-color_200;
             font-size: 2rem;
             letter-spacing: 0.5rem;
             cursor: default;
@@ -33,18 +34,18 @@
       &__right {
          .nav-links li {
             & a {
-               color: rgb(150, 150, 150);
+               color: base.$secondary-color_150;
                padding: 0 1rem !important;
                font-weight: 500;
                font-family: base.$font-aldrich;
                &:hover {
                   border: none !important;
                   padding: 0 1rem !important;
-                  color: rgb(200, 200, 200);
+                  color: base.$secondary-color_200;
                }
                &.active {
                   border: none !important;
-                  color: rgb(255, 255, 255);
+                  color: base.$secondary-color_250;
                }
             }
             &:last-child {
@@ -117,7 +118,7 @@
       top: 12rem;
       margin: 0 0 2.5rem 5%;
       font-family: base.$font-aldrich;
-      color: white;
+      color: base.$secondary-color_250;
       .hello {
          font-size: 1.3rem;
       }
@@ -134,7 +135,6 @@
       }
    }
    &__fade-shadow {
-      // background-color: rgba(95, 158, 160, 0.342);
       background-image: linear-gradient(180deg, transparent, transparent, base.$primary-color);
       height: 15vh;
       margin: 0 0 -1rem 0;
@@ -145,7 +145,8 @@
 .about {
    padding: 4rem 0 1rem 0;
    &--heading {
-      font-family: base.$section-heading-font;
+      font-family: base.$font-aldrich;
+      font-size: base.$section-heading-size;
       margin: 3rem 0;
    }
    &__desc {
@@ -161,8 +162,6 @@
          overflow: hidden;
          background-image: linear-gradient(270deg, transparent, base.$primary-color);
          color: rgb(15, 15, 15);
-         // border-radius: 35px 40px 40px 35px;
-         // border-radius: 60% 20% / 40% 30%;
          img {
             background-color: rgb(50, 50, 50);
             padding: 4px;
@@ -182,7 +181,8 @@
    padding: 4rem 0 5rem 0;
    &--heading {
       text-align: end;
-      font-family: base.$section-heading-font;
+      font-family: base.$font-aldrich;
+      font-size: base.$section-heading-size;
       margin: 3rem 0;
    }
    &__desc {
@@ -229,31 +229,35 @@
 
 //* Works Section
 .works {
-   // background-color: rgb(23, 184, 63);
-   padding: 4rem 0 3rem 0;
+   $carousel-width: map.get(base.$carousel-widths, "default");
+
+   padding: 4.6rem 0 3rem 0;
    &--heading {
-      font-family: base.$section-heading-font;
+      font-family: base.$font-aldrich;
+      font-size: base.$section-heading-size;
    }
    &__carousel {
-      // background-color: gray;
       .carousel-item {
          display: flex;
          justify-content: center;
          &--img {
-            width: base.$carousel-width !important;
+            width: $carousel-width !important;
             border-radius: 0.2rem;
          }
          &--title {
             visibility: hidden;
+            font-family: base.$font-exo2;
+            font-size: 1.2rem;
+            font-weight: 500;
             color: transparent;
-            width: base.$carousel-width;
+            width: $carousel-width;
             height: 0;
             position: absolute;
             bottom: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 0 0 0.2rem 0.2rem;
+            border-radius: 0 0 0.15rem 0.15rem;
             overflow: hidden;
             cursor: default;
             transition-duration: 500ms;
@@ -271,15 +275,15 @@
          &:hover > .carousel-item--title {
             visibility: visible;
             height: 40px;
-            background-color: rgba(255, 255, 255, 0.5);
-            color: black;
+            background-color: rgb(22, 22, 22, 0.8);
+            color: base.$secondary-color_200;
             &:hover {
-               background-color: rgba(255, 255, 255, 0.774);
+               background-color: rgb(22, 22, 22, 0.96);
             }
             .link-icon {
-               color: rgb(51, 51, 51);
+               color: base.$secondary-color_200;
                &:hover {
-                  color: black;
+                  color: base.$secondary-color_100;
                }
             }
          }
@@ -290,7 +294,7 @@
 //* Footer Section
 .footer {
    background-color: rgb(22, 22, 22);
-   color: rgb(150, 150, 150);
+   color: base.$secondary-color_150;
    height: 6rem;
    &__row {
       background-color: inherit;
@@ -306,7 +310,7 @@
             color: inherit;
             margin: 0 1rem;
             &:hover {
-               color: rgb(200, 200, 200);
+               color: base.$secondary-color_200;
             }
          }
       }
