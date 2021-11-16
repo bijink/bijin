@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Antic+Slab&family=Aref+Ruqaa:wght@400;700&family=Buda:wght@300&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Unicase:wght@400;500;600;700&family=Cormorant+Upright:wght@500;600;700&family=El+Messiri:wght@400;500&family=Genos:wght@300;400;500&family=Italiana&family=Marcellus+SC&family=Mate+SC&family=Orbitron:wght@400;500&family=Philosopher:ital@0;1&family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Changa:wght@300;400;500;600&family=Exo+2:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&family=Montserrat+Alternates:wght@500;600;700&family=Play:wght@400;700&family=Rajdhani:wght@400;500;600&family=Saira+Condensed:wght@300;400;500&family=Teko:wght@300;400;500&family=Yanone+Kaffeesatz:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400&family=Exo+2:wght@200;300&family=Exo:wght@200;300;400&family=Open+Sans:wght@300;400&family=Roboto:wght@100;300&family=Saira:wght@100;200;300&family=Titillium+Web:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -133,7 +134,6 @@ html {
 
 .home {
   height: 115vh;
-  background-image: url("/assets/img/home__banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -176,12 +176,25 @@ html {
 }
 .about__desc {
   text-align: justify;
+  font-size: 1.3rem;
+  font-family: "Exo 2", sans-serif;
 }
 .about__chips {
+  font-family: "Exo 2", sans-serif;
   margin: 2rem 0 0 0;
 }
-.about__chips > * {
+.about__chips .chip {
   margin: 0 1rem 0.5rem 0;
+  overflow: hidden;
+  background-image: linear-gradient(270deg, transparent, #1f1f1f);
+  color: #0f0f0f;
+}
+.about__chips .chip img {
+  background-color: #323232;
+  padding: 4px;
+}
+.about__chips .react img {
+  padding: 5px;
 }
 
 .services {
