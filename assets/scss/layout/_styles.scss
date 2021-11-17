@@ -135,7 +135,7 @@
       }
    }
    &__fade-shadow {
-      background-image: linear-gradient(180deg, transparent, transparent, base.$primary-color);
+      background-image: linear-gradient(180deg, transparent, transparent, base.$primary-color_30);
       height: 15vh;
       margin: 0 0 -1rem 0;
    }
@@ -160,10 +160,10 @@
       .chip {
          margin: 0 1rem 0.5rem 0;
          overflow: hidden;
-         background-image: linear-gradient(270deg, transparent, base.$primary-color);
+         background-image: linear-gradient(90deg, base.$primary-color_40, base.$primary-color_180);
          color: rgb(15, 15, 15);
          img {
-            background-color: rgb(50, 50, 50);
+            background-image: linear-gradient(90deg, base.$primary-color_30, transparent);
             padding: 4px;
          }
       }
@@ -177,8 +177,7 @@
 
 //* Services Section
 .services {
-   // background-color: rgb(188, 190, 33);
-   padding: 4rem 0 5rem 0;
+   padding: 4rem 0 0 0;
    &--heading {
       text-align: end;
       font-family: base.$font-aldrich;
@@ -187,39 +186,58 @@
    }
    &__desc {
       text-align: justify;
+      font-size: 1.3rem;
+      font-family: base.$font-exo2;
    }
    &__card {
-      // background-color: rgb(103, 104, 36);
       display: flex;
       justify-content: space-between;
-      margin: 2rem 0 0 0;
+      margin: 4rem 0 0 0;
       height: 100%;
-      &--one,
-      &--two {
-         width: 25rem !important;
+      &--static,
+      &--react {
          margin: 0 1rem !important;
-         background-color: rgb(192, 174, 153);
+         background-color: transparent !important;
+         box-shadow: none !important;
+         border-radius: 0.6rem !important;
          .card-image {
-            // background-color: rgb(165, 135, 96);
             img {
-               // background-color: burlywood;
-               height: 20rem !important;
+               height: 18rem !important;
             }
          }
          .card-content {
-            // background-color: rgb(153, 112, 63);
+            display: flex;
+            justify-content: center;
+            .card-title {
+               color: base.$secondary-color_250 !important;
+               font-family: base.$font-exo2;
+               font-weight: 500;
+            }
          }
          .card-reveal {
-            background-color: rgb(216, 191, 158);
+            background-color: base.$primary-color_40;
             text-align: justify;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+               display: none;
+            }
+            .card-title {
+               color: base.$secondary-color_250 !important;
+               font-family: base.$font-exo2;
+               font-weight: 300;
+               font-size: 1.5rem;
+            }
             &__more-info {
+               color: base.$secondary-color_250 !important;
+               font-family: base.$font-exo2;
                &--read-more {
                   cursor: pointer;
+                  font-weight: 100;
                }
             }
          }
       }
-      &--one {
+      &--static {
          .card-image {
             padding: 0 1rem;
          }

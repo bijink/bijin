@@ -9,7 +9,7 @@
 body,
 html {
   scroll-behavior: smooth;
-  background-color: #1f1f1f;
+  background-color: #1e1e1e;
   color: #fafafa;
 }
 
@@ -162,7 +162,7 @@ html {
   font-size: 1.7rem;
 }
 .home__fade-shadow {
-  background-image: linear-gradient(180deg, transparent, transparent, #1f1f1f);
+  background-image: linear-gradient(180deg, transparent, transparent, #1e1e1e);
   height: 15vh;
   margin: 0 0 -1rem 0;
 }
@@ -187,11 +187,11 @@ html {
 .about__chips .chip {
   margin: 0 1rem 0.5rem 0;
   overflow: hidden;
-  background-image: linear-gradient(270deg, transparent, #1f1f1f);
+  background-image: linear-gradient(90deg, #282828, #b4b4b4);
   color: #0f0f0f;
 }
 .about__chips .chip img {
-  background-color: #323232;
+  background-image: linear-gradient(90deg, #1e1e1e, transparent);
   padding: 4px;
 }
 .about__chips .react img {
@@ -199,7 +199,7 @@ html {
 }
 
 .services {
-  padding: 4rem 0 5rem 0;
+  padding: 4rem 0 0 0;
 }
 .services--heading {
   text-align: end;
@@ -209,29 +209,56 @@ html {
 }
 .services__desc {
   text-align: justify;
+  font-size: 1.3rem;
+  font-family: "Exo 2", sans-serif;
 }
 .services__card {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 0 0 0;
+  margin: 4rem 0 0 0;
   height: 100%;
 }
-.services__card--one, .services__card--two {
-  width: 25rem !important;
+.services__card--static, .services__card--react {
   margin: 0 1rem !important;
-  background-color: #c0ae99;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0.6rem !important;
 }
-.services__card--one .card-image img, .services__card--two .card-image img {
-  height: 20rem !important;
+.services__card--static .card-image img, .services__card--react .card-image img {
+  height: 18rem !important;
 }
-.services__card--one .card-reveal, .services__card--two .card-reveal {
-  background-color: #d8bf9e;
+.services__card--static .card-content, .services__card--react .card-content {
+  display: flex;
+  justify-content: center;
+}
+.services__card--static .card-content .card-title, .services__card--react .card-content .card-title {
+  color: #fafafa !important;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+}
+.services__card--static .card-reveal, .services__card--react .card-reveal {
+  background-color: #282828;
   text-align: justify;
+  scrollbar-width: none;
 }
-.services__card--one .card-reveal__more-info--read-more, .services__card--two .card-reveal__more-info--read-more {
+.services__card--static .card-reveal::-webkit-scrollbar, .services__card--react .card-reveal::-webkit-scrollbar {
+  display: none;
+}
+.services__card--static .card-reveal .card-title, .services__card--react .card-reveal .card-title {
+  color: #fafafa !important;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.services__card--static .card-reveal__more-info, .services__card--react .card-reveal__more-info {
+  color: #fafafa !important;
+  font-family: "Exo 2", sans-serif;
+}
+.services__card--static .card-reveal__more-info--read-more, .services__card--react .card-reveal__more-info--read-more {
   cursor: pointer;
+  font-weight: 100;
 }
-.services__card--one .card-image {
+.services__card--static .card-image {
   padding: 0 1rem;
 }
 
@@ -331,13 +358,18 @@ html {
   margin: 0 0.3rem;
 }
 
+@media only screen and (max-width: 750px) {
+  .services__card--static .card-image img, .services__card--react .card-image img {
+    height: 15rem !important;
+  }
+}
 @media only screen and (max-width: 600px) {
   .services__card {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .services__card--one, .services__card--two {
+  .services__card--static, .services__card--react {
     margin: 0 0 2rem 0 !important;
     width: 25rem !important;
   }
@@ -374,11 +406,15 @@ html {
   }
 }
 @media screen and (max-width: 450px) {
-  .services__card--one, .services__card--two {
+  .services__card--static, .services__card--react {
     width: 85% !important;
   }
 }
 @media screen and (max-width: 350px) {
+  .services__card--static .card-image img, .services__card--react .card-image img {
+    height: 15rem !important;
+  }
+
   .works__carousel .carousel-item {
     height: 140px !important;
   }

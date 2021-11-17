@@ -1,6 +1,21 @@
 @use "sass:map";
 @use "../base/base";
 
+@media only screen and (max-width: 750px) {
+   //* Services Section
+   .services {
+      &__card {
+         &--static,
+         &--react {
+            .card-image {
+               img {
+                  height: 15rem !important;
+               }
+            }
+         }
+      }
+   }
+}
 @media only screen and (max-width: 600px) {
    //* Services Section
    .services {
@@ -8,8 +23,8 @@
          display: flex;
          flex-direction: column;
          align-items: center;
-         &--one,
-         &--two {
+         &--static,
+         &--react {
             margin: 0 0 2rem 0 !important;
             width: 25rem !important;
          }
@@ -62,8 +77,8 @@
    //* Services Section
    .services {
       &__card {
-         &--one,
-         &--two {
+         &--static,
+         &--react {
             width: 85% !important;
          }
       }
@@ -71,6 +86,20 @@
 }
 
 @media screen and (max-width: 350px) {
+   //* Services Section
+   .services {
+      &__card {
+         &--static,
+         &--react {
+            .card-image {
+               img {
+                  height: 15rem !important;
+               }
+            }
+         }
+      }
+   }
+
    //* Works Section
    .works {
       $carousel-width: map.get(base.$carousel-widths, "max_350px");
