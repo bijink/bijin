@@ -35,3 +35,17 @@ $(document).ready(function () {
 // setTimeout(() => {
 //    $('#slide-out').removeClass('sidenav-fixed');
 // }, 1200);
+
+// To hide pulse effect from toggleBtn of fixed-action-btn after user first click;
+$(".fixed-action-btn__toggle-btn").click(function () {
+   $(".fixed-action-btn__toggle-btn").removeClass('pulse');
+});
+
+// To change menu icon to close icon on toggleBtn of fixed-action-btn
+var btn = $('.fixed-action-btn__toggle-btn');
+var icon = $('.fixed-action-btn__toggle-btn > .menu-btn');
+let x = 0;
+$(btn).click(() => (x === 0)
+   ? `${$(icon).text('').text('close')} ${x = x -= 1}`
+   : `${$(icon).text('').text('menu')} ${x = x += 1}`
+);

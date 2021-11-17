@@ -1,8 +1,10 @@
+@use "../base/base";
+
 .fixed-action-btn {
    width: fit-content !important;
    position: absolute !important;
-   top: 9.7rem !important;
-   right: 0 !important;
+   top: 11rem !important;
+   right: 0.8rem !important;
    z-index: 998 !important;
    &__toggle-btn {
       width: 50px !important;
@@ -11,8 +13,9 @@
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
+      background-color: base.$primary-color_50 !important;
       .material-icons {
-         color: rgba(0, 0, 0, 0.705) !important;
+         color: base.$secondary-color_150 !important;
          font-size: 2rem !important;
       }
    }
@@ -28,33 +31,55 @@
    &--about,
    &--services,
    &--works {
-      width: 38px !important;
-      height: 38px !important;
+      width: 36px !important;
+      height: 36px !important;
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
       margin: 0 !important;
       padding: 0 !important;
-      // z-index: 1 !important;
-      // color: rgb(255, 0, 0) !important;
-      // color: transparent !important;
-      // background-color: #000000 !important;
-      // background-color: #00000000 !important;
-      // background-color: transparent !important;
+      background-color: base.$primary-color_150 !important;
       .material-icons {
          margin: 0 !important;
          width: inherit !important;
          display: inline-block !important;
          text-align: center !important;
-         // color: #fff !important;
-         color: rgba(0, 0, 0, 0.705) !important;
-         // font-size: 1.6rem !important;
+         color: base.$secondary-color_40 !important;
          font-size: 1.4rem !important;
       }
    }
    &--home {
       .material-icons {
-         font-size: 1.7rem !important;
+         font-size: 1.6rem !important;
+      }
+   }
+}
+
+@media only screen and (max-width: 350px) {
+   .fixed-action-btn {
+      top: 11.22rem !important;
+      right: 0.7rem !important;
+      &__toggle-btn {
+         width: 43px !important;
+         height: 43px !important;
+         .material-icons {
+            font-size: 1.8rem !important;
+         }
+      }
+      &--home,
+      &--about,
+      &--services,
+      &--works {
+         width: 32px !important;
+         height: 32px !important;
+         .material-icons {
+            font-size: 1.2rem !important;
+         }
+      }
+      &--home {
+         .material-icons {
+            font-size: 1.5rem !important;
+         }
       }
    }
 }

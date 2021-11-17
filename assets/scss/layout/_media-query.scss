@@ -16,6 +16,7 @@
       }
    }
 }
+
 @media only screen and (max-width: 600px) {
    //* Services Section
    .services {
@@ -123,48 +124,44 @@
 }
 
 @media screen and (max-width: 350px) and (min-width: 300px) {
-   //* Side Bar
-   .side-bar-wrapper {
+   //* Sidebar Section
+   .sidebar {
       $sideNav-out-w: base.sideNav-out-width("350px-300px");
       $sideNav-in-w: base.sideNav-in-width("350px-300px");
 
-      .side-bar {
-         .sidenav {
-            width: $sideNav-out-w;
-            background: linear-gradient(
-               to right,
-               rgb(255, 255, 255) 0%,
-               rgb(255, 255, 255) $sideNav-in-w,
-               transparent 80%,
-               transparent 100%
-            );
-            .side-nav {
-               width: $sideNav-in-w;
-            }
+      .sidenav {
+         width: $sideNav-out-w;
+         background: linear-gradient(
+            to right,
+            base.$sideNav-bg-color 0%,
+            base.$sideNav-bg-color $sideNav-in-w,
+            transparent 80%,
+            transparent 100%
+         );
+         .side-nav {
+            width: $sideNav-in-w;
          }
       }
    }
 }
 
 @media screen and (max-width: 300px) {
-   //* Side Bar
-   .side-bar-wrapper {
+   //* Sidebar Section
+   .sidebar {
       $sideNav-out-w: base.sideNav-out-width("300px-0px");
       $sideNav-in-w: base.sideNav-in-width("300px-0px");
 
-      .side-bar {
-         .sidenav {
-            width: $sideNav-out-w;
-            background: linear-gradient(
-               to right,
-               rgb(255, 255, 255) 0%,
-               rgb(255, 255, 255) $sideNav-in-w,
-               transparent 80%,
-               transparent 100%
-            );
-            .side-nav {
-               width: $sideNav-in-w;
-            }
+      .sidenav {
+         width: $sideNav-out-w;
+         background: linear-gradient(
+            to right,
+            base.$sideNav-bg-color 0%,
+            base.$sideNav-bg-color $sideNav-in-w,
+            transparent 80%,
+            transparent 100%
+         );
+         .side-nav {
+            width: $sideNav-in-w;
          }
       }
    }

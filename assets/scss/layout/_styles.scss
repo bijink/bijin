@@ -1,20 +1,21 @@
 @use "sass:map";
 @use "../base/base";
 
-//* Header
+//* Header Section
 .header {
    position: fixed;
    top: 0;
    width: 100%;
    z-index: 999 !important;
    &__navbar {
-      background-color: rgb(10, 10, 10);
+      background-color: base.$primary-color_10;
       display: flex;
       justify-content: space-between;
       &__left {
          &--sidebar-trigger-btn {
             display: unset !important;
             color: base.$secondary-color_200;
+            cursor: pointer;
             .material-icons {
                font-size: 2.3rem;
                &:hover {
@@ -56,50 +57,82 @@
    }
 }
 
-//* Side Bar
-.side-bar-wrapper {
+//* Sidebar Section
+.sidebar {
    $sideNav-out-w: base.sideNav-out-width("full-350px");
    $sideNav-in-w: base.sideNav-in-width("full-350px");
 
-   .side-bar {
-      .sidenav {
-         &::-webkit-scrollbar {
-            display: none; //Safari and Chrome
+   .sidenav {
+      &::-webkit-scrollbar {
+         display: none; //Safari and Chrome
+      }
+      scrollbar-width: none; // Firefox
+      -ms-overflow-style: none; //Internet Explorer 10+
+      width: $sideNav-out-w;
+      background: linear-gradient(
+         to right,
+         base.$sideNav-bg-color 0%,
+         base.$sideNav-bg-color $sideNav-in-w,
+         transparent 85%,
+         transparent 100%
+      );
+      // transition-timing-function: linear;
+      // transition-timing-function: ease-in-out;
+      transition-timing-function: ease;
+      transition-duration: 300ms;
+      .side-nav {
+         width: $sideNav-in-w;
+         &__profile {
+            padding: 1.5rem !important;
+            .bg-img {
+               img {
+                  width: 100%;
+                  height: 100%;
+               }
+            }
+            .profile-details {
+               &--img {
+                  width: 4.8rem;
+                  height: 4.8rem;
+               }
+               &--name,
+               &--mail {
+                  color: base.$secondary-color_250 !important;
+                  font-family: base.$font-aldrich;
+                  font-size: 1rem;
+               }
+               &--name {
+                  margin: 1.5rem 0 0 0;
+                  font-weight: 600;
+                  letter-spacing: 0.05rem;
+               }
+               &--mail {
+                  padding-bottom: 0 !important;
+                  display: inline-block;
+                  color: base.$secondary-color_250 !important;
+                  &:hover {
+                     color: base.$secondary-color_200 !important;
+                  }
+               }
+            }
          }
-         scrollbar-width: none; // Firefox
-         -ms-overflow-style: none; //Internet Explorer 10+
-         width: $sideNav-out-w;
-         background: linear-gradient(
-            to right,
-            rgb(255, 255, 255) 0%,
-            rgb(255, 255, 255) $sideNav-in-w,
-            transparent 80%,
-            transparent 100%
-         );
-         // transition-timing-function: linear;
-         // transition-timing-function: ease-in-out;
-         transition-timing-function: ease;
-         transition-duration: 300ms;
-         .side-nav {
-            width: $sideNav-in-w;
-            &__profile {
-               .background-img {
-                  img {
-                     width: 100%;
-                     height: 100%;
-                  }
-               }
-               .profile-details {
-                  &--user-img,
-                  &--user-name,
-                  &--user-mail {
-                  }
-               }
+         &__links {
+            font-family: base.$font-exo2 !important;
+            .subheader {
+               color: base.$secondary-color_100 !important;
+               font-family: base.$font-aldrich !important;
+               font-size: 1rem;
+               font-weight: 800;
             }
-            &__links li a i {
-               font-size: 1.5rem;
-               margin: 0 1rem 0 0;
-            }
+         }
+         &__links li a {
+            color: base.$secondary-color_50 !important;
+            font-size: 1rem;
+         }
+         &__links li a i {
+            color: base.$secondary-color_80 !important;
+            font-size: 1.5rem;
+            margin: 0 1rem 0 0;
          }
       }
    }
@@ -161,7 +194,7 @@
          margin: 0 1rem 0.5rem 0;
          overflow: hidden;
          background-image: linear-gradient(90deg, base.$primary-color_40, base.$primary-color_180);
-         color: rgb(15, 15, 15);
+         color: base.$secondary-color_15;
          img {
             background-image: linear-gradient(90deg, base.$primary-color_30, transparent);
             padding: 4px;
@@ -201,6 +234,7 @@
          box-shadow: none !important;
          border-radius: 0.6rem !important;
          .card-image {
+            border-radius: inherit !important;
             img {
                height: 18rem !important;
             }
@@ -226,6 +260,9 @@
                font-family: base.$font-exo2;
                font-weight: 300;
                font-size: 1.5rem;
+               &:hover > .material-icons {
+                  color: base.$secondary-color_150;
+               }
             }
             &__more-info {
                color: base.$secondary-color_250 !important;
@@ -311,7 +348,7 @@
 
 //* Footer Section
 .footer {
-   background-color: rgb(22, 22, 22);
+   background-color: base.$primary-color_20;
    color: base.$secondary-color_150;
    height: 6rem;
    &__row {

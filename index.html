@@ -22,13 +22,13 @@
    </head>
 
    <body>
-      <!-- Header (contains: sideBarTriggerBtn, navBar) -->
+      <!-- Header (contains: sidebarTriggerBtn, navBar) -->
       <section id="header" class="header">
          <!-- NavBar -->
          <nav class="header__navbar col right">
             <div class="header__navbar__left">
-               <!-- Toggle btn for sideBar -->
-               <a href="#" data-target="slide-out" class="header__navbar__left--sidebar-trigger-btn sidenav-trigger">
+               <!-- Toggle btn for sidebar -->
+               <a data-target="slide-out" class="header__navbar__left--sidebar-trigger-btn sidenav-trigger">
                   <i class="material-icons">person</i>
                </a>
                <p class="header__navbar__left--name-logo"> BiJiN </p>
@@ -44,58 +44,65 @@
          </nav>
       </section>
 
-      <!-- SideBar (contains: sideBar, toggleBtn, links) -->
-      <!-- <section class="side-bar-wrapper">
-         <div class="side-bar left">
-            <ul class="sidenav z-depth-0" id="slide-out">
-               <div class="side-nav">
-
-                  <!~~ Toggle btn to open navigation menu for small screen ~~>
-                  <div class="fixed-action-btn hide-on-med-only hide-on-large-only show-on-small">
-                     <a class="fixed-action-btn__toggle-btn btn pulse red">
-                        <i class="large material-icons ">menu</i>
-                     </a>
-                     <ul class="fixed-action-btn__floating-btn">
-                        <li><a class="fixed-action-btn--works btn-floating green" href="#works"><i class="material-icons">work</i></a></li>
-                        <li><a class="fixed-action-btn--services btn-floating yellow darken-1" href="#services"><i class="material-icons">miscellaneous_services</i></a></li>
-                        <li><a class="fixed-action-btn--about btn-floating red" href="#about"><i class="material-icons">info</i></a></li>
-                        <li><a class="fixed-action-btn--home btn-floating yellow" href="#"><i class="material-icons">home</i></a></li>
-                     </ul>
+      <!-- Sidebar (contains: sidebar, toggleBtn, links) -->
+      <section class="sidebar">
+         <ul class="sidenav z-depth-0" id="slide-out">
+            <div class="side-nav">
+               <!-- Toggle btn to open navigation menu for small screen -->
+               <div class="fixed-action-btn hide-on-med-only hide-on-large-only show-on-small">
+                  <a class="fixed-action-btn__toggle-btn pulse">
+                     <i class="material-icons menu-btn">menu</i>
+                  </a>
+                  <ul class="fixed-action-btn__floating-btn">
+                     <li><a class="fixed-action-btn--works btn-floating" href="#works"><i class="material-icons">work</i></a></li>
+                     <li><a class="fixed-action-btn--services btn-floating" href="#services"><i class="material-icons">miscellaneous_services</i></a></li>
+                     <li><a class="fixed-action-btn--about btn-floating" href="#about"><i class="material-icons">info</i></a></li>
+                     <li><a class="fixed-action-btn--home btn-floating" href="#"><i class="material-icons">home</i></a></li>
+                  </ul>
+               </div>
+               <!-- Sidebar-Profile -->
+               <div class="side-nav__profile user-view">
+                  <div class="bg-img background">
+                     <img src="./assets/img/sidebar_profile-bg-img.webp" alt="profile-bg-img">
                   </div>
-
-                  <!~~ SideBar-Profile ~~>
-                  <div class="side-nav__profile user-view">
-                     <div class="background-img background">
-                        <img src="./assets/img/home_bg.jpg" alt="user-bg-img">
-                     </div>
-                     <div class="profile-details">
-                        <img class="profile-details--user-img circle" src="./assets/img/side-bar__profile-image.webp" alt="user-img">
-                        <span class="profile-details--user-name name white-text">Bijin</span>
-                        <span class="profile-details--user-mail email white-text">kbijin528@gmail.com</span>
-                     </div>
-                  </div>
-
-                  <!~~ SideBar-Links ~~>
-                  <div class="side-nav__links">
-                     <li><a class="subheader">Social</a></li>
-                     <li><a class="sidenav-close waves-effect waves-teal" href="#!"><i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
-                     <li><a class="waves-effect" href="https://github.com/bijink" target="_black"><i class="fab fa-github"></i>Github</a></li>
-                     <li><a class="waves-effect" href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
-                     <li>
-                        <div class="divider"></div>
-                     </li>
-                     <li><a class="subheader">Works</a></li>
-                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-                     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                  <div class="profile-details">
+                     <img class="profile-details--img circle" src="./assets/img/sidebar_profile-img.webp" alt="profile-img">
+                     <span class="profile-details--name name ">Bijin</span>
+                     <a class="profile-details--mail email" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kbijin528@gmail.com" target="_blank" rel="noopener noreferrer">kbijin528@gmail.com</a>
                   </div>
                </div>
-            </ul>
-         </div>
-      </section> -->
+               <!-- Sidebar-Links -->
+               <div class="side-nav__links">
+                  <li><a class="subheader">Social</a></li>
+                  <li>
+                     <a class="sidenav-close waves-effect" href="https://www.linkedin.com/in/bijin-k-7205991b2" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>LinkedIn
+                     </a>
+                  </li>
+                  <li>
+                     <a class="sidenav-close waves-effect" href="https://github.com/bijink" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>Github
+                     </a>
+                  </li>
+                  <li>
+                     <a class="sidenav-close waves-effect" href="https://www.instagram.com/bijin.k" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>Instagram
+                     </a>
+                  </li>
+                  <!-- <li>
+                     <div class="divider"></div>
+                  </li>
+                  <li><a class="subheader">Works</a></li>
+                  <li><a class="waves-effect" href="#!">Link With Waves</a></li>
+                  <li><a class="waves-effect" href="#!">Link With Waves</a></li>
+                  <li><a class="waves-effect" href="#!">Link With Waves</a></li> -->
+               </div>
+            </div>
+         </ul>
+      </section>
 
       <!-- Home -->
-      <section id="home" class="home section scrollspy" style="background-image: url(assets/img/home_bg.jpg);">
+      <section id="home" class="home section scrollspy" style="background-image: url(assets/img/home_bg-img.jpg);">
          <div class="home__profile-intro">
             <p class="hello">Hello World, I'm</p>
             <h1 class="name">B<span>ijin</span></h1>
@@ -241,11 +248,11 @@
       </section>
 
       <!-- *** Scripts *** -->
-      <!-- jquery -->
+      <!-- jQuery -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <!-- Materialize : Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <!-- Custom js -->
+      <!-- Custom script -->
       <script src="assets/js/script.js"></script>
    </body>
 
