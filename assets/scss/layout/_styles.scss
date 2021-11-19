@@ -8,24 +8,24 @@
    width: 100%;
    z-index: 999 !important;
    &__navbar {
-      background-color: base.$primary-color_10;
+      background-color: base.$color_rgb_10;
       display: flex;
       justify-content: space-between;
       &__left {
          &--sidebar-trigger-btn {
             display: unset !important;
-            color: base.$secondary-color_200;
+            color: base.$color_rgb_200;
             cursor: pointer;
             .material-icons {
                font-size: 2.3rem;
                &:hover {
-                  color: base.$secondary-color_250;
+                  color: base.$color_rgb_250;
                }
             }
          }
          &--name-logo {
             float: left;
-            color: base.$secondary-color_200;
+            color: base.$color_rgb_200;
             font-size: 2rem;
             letter-spacing: 0.5rem;
             cursor: default;
@@ -35,18 +35,18 @@
       &__right {
          .nav-links li {
             & a {
-               color: base.$secondary-color_150;
+               color: base.$color_rgb_150;
                padding: 0 1rem !important;
                font-weight: 500;
                font-family: base.$font-aldrich;
                &:hover {
                   border: none !important;
                   padding: 0 1rem !important;
-                  color: base.$secondary-color_200;
+                  color: base.$color_rgb_200;
                }
                &.active {
                   border: none !important;
-                  color: base.$secondary-color_250;
+                  color: base.$color_rgb_250;
                }
             }
             &:last-child {
@@ -66,7 +66,7 @@
       &::-webkit-scrollbar {
          display: none; //Safari and Chrome
       }
-      scrollbar-width: none; // Firefox
+      scrollbar-width: none; //Firefox
       -ms-overflow-style: none; //Internet Explorer 10+
       width: $sideNav-out-w;
       background: linear-gradient(
@@ -97,7 +97,7 @@
                }
                &--name,
                &--mail {
-                  color: base.$secondary-color_250 !important;
+                  color: base.$color_rgb_250 !important;
                   font-family: base.$font-aldrich;
                   font-size: 1rem;
                }
@@ -109,9 +109,9 @@
                &--mail {
                   padding-bottom: 0 !important;
                   display: inline-block;
-                  color: base.$secondary-color_250 !important;
+                  color: base.$color_rgb_250 !important;
                   &:hover {
-                     color: base.$secondary-color_200 !important;
+                     color: base.$color_rgb_200 !important;
                   }
                }
             }
@@ -119,18 +119,18 @@
          &__links {
             font-family: base.$font-exo2 !important;
             .subheader {
-               color: base.$secondary-color_100 !important;
+               color: base.$color_rgb_100 !important;
                font-family: base.$font-aldrich !important;
                font-size: 1rem;
                font-weight: 800;
             }
          }
          &__links li a {
-            color: base.$secondary-color_50 !important;
+            color: base.$color_rgb_50 !important;
             font-size: 1rem;
          }
          &__links li a i {
-            color: base.$secondary-color_80 !important;
+            color: base.$color_rgb_80 !important;
             font-size: 1.5rem;
             margin: 0 1rem 0 0;
          }
@@ -151,7 +151,7 @@
       top: 12rem;
       margin: 0 0 2.5rem 5%;
       font-family: base.$font-aldrich;
-      color: base.$secondary-color_250;
+      color: base.$color_rgb_250;
       .hello {
          font-size: 1.3rem;
       }
@@ -168,7 +168,7 @@
       }
    }
    &__fade-shadow {
-      background-image: linear-gradient(180deg, transparent, transparent, base.$primary-color_30);
+      background-image: linear-gradient(180deg, transparent, transparent, base.$color_rgb_30);
       height: 15vh;
       margin: 0 0 -1rem 0;
    }
@@ -193,10 +193,10 @@
       .chip {
          margin: 0 1rem 0.5rem 0;
          overflow: hidden;
-         background-image: linear-gradient(90deg, base.$primary-color_40, base.$primary-color_180);
-         color: base.$secondary-color_15;
+         background-image: linear-gradient(90deg, base.$color_rgb_40, base.$color_rgb_180);
+         color: base.$color_rgb_15;
          img {
-            background-image: linear-gradient(90deg, base.$primary-color_30, transparent);
+            background-image: linear-gradient(90deg, base.$color_rgb_30, transparent);
             padding: 4px;
          }
       }
@@ -243,29 +243,29 @@
             display: flex;
             justify-content: center;
             .card-title {
-               color: base.$secondary-color_250 !important;
+               color: base.$color_rgb_250 !important;
                font-family: base.$font-exo2;
                font-weight: 500;
             }
          }
          .card-reveal {
-            background-color: base.$primary-color_40;
+            background-color: base.$color_rgb_40;
             text-align: justify;
             scrollbar-width: none;
             &::-webkit-scrollbar {
                display: none;
             }
             .card-title {
-               color: base.$secondary-color_250 !important;
+               color: base.$color_rgb_250 !important;
                font-family: base.$font-exo2;
                font-weight: 300;
                font-size: 1.5rem;
                &:hover > .material-icons {
-                  color: base.$secondary-color_150;
+                  color: base.$color_rgb_150;
                }
             }
             &__more-info {
-               color: base.$secondary-color_250 !important;
+               color: base.$color_rgb_250 !important;
                font-family: base.$font-exo2;
                &--read-more {
                   cursor: pointer;
@@ -331,14 +331,14 @@
             visibility: visible;
             height: 40px;
             background-color: rgb(22, 22, 22, 0.8);
-            color: base.$secondary-color_200;
+            color: base.$color_rgb_200;
             &:hover {
                background-color: rgb(22, 22, 22, 0.96);
             }
             .link-icon {
-               color: base.$secondary-color_200;
+               color: base.$color_rgb_200;
                &:hover {
-                  color: base.$secondary-color_100;
+                  color: base.$color_rgb_100;
                }
             }
          }
@@ -348,8 +348,8 @@
 
 //* Footer Section
 .footer {
-   background-color: base.$primary-color_20;
-   color: base.$secondary-color_150;
+   background-color: base.$color_rgb_20;
+   color: base.$color_rgb_150;
    height: 6rem;
    &__row {
       background-color: inherit;
@@ -365,7 +365,7 @@
             color: inherit;
             margin: 0 1rem;
             &:hover {
-               color: base.$secondary-color_200;
+               color: base.$color_rgb_200;
             }
          }
       }
@@ -378,7 +378,7 @@
          font-family: base.$font-aldrich;
          span {
             font-size: 1.25rem;
-            margin: 0 0.3rem;
+            margin: 0.2rem 0.3rem 0;
          }
       }
    }

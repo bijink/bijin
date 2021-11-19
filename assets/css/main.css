@@ -426,7 +426,7 @@ html {
 }
 .footer__row--copyright span {
   font-size: 1.25rem;
-  margin: 0 0.3rem;
+  margin: 0.2rem 0.3rem 0;
 }
 
 @media only screen and (max-width: 750px) {
@@ -455,6 +455,9 @@ html {
     font-size: 1.7rem;
     margin: 0 0.6rem;
   }
+  .footer__row--copyright {
+    color: #787878;
+  }
 }
 @media only screen and (max-width: 500px) {
   .works__carousel {
@@ -479,6 +482,13 @@ html {
 @media screen and (max-width: 450px) {
   .services__card--static, .services__card--react {
     width: 85% !important;
+  }
+
+  .footer__row--copyright {
+    font-size: 0.9rem;
+  }
+  .footer__row--copyright span {
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 350px) {

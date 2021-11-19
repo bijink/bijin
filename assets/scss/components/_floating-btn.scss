@@ -13,9 +13,9 @@
       display: flex !important;
       justify-content: center !important;
       align-items: center !important;
-      background-color: base.$primary-color_50 !important;
+      background-color: base.$color_rgb_50 !important;
       .material-icons {
-         color: base.$secondary-color_150 !important;
+         color: base.$color_rgb_150 !important;
          font-size: 2rem !important;
       }
    }
@@ -38,13 +38,13 @@
       align-items: center !important;
       margin: 0 !important;
       padding: 0 !important;
-      background-color: base.$primary-color_150 !important;
+      background-color: base.$color_rgb_150 !important;
       .material-icons {
          margin: 0 !important;
          width: inherit !important;
          display: inline-block !important;
          text-align: center !important;
-         color: base.$secondary-color_40 !important;
+         color: base.$color_rgb_40 !important;
          font-size: 1.4rem !important;
       }
    }

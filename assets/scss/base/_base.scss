@@ -1,33 +1,10 @@
 @use "sass:map";
+@forward "../base/colors";
 
 //* Variables
-// Colors Primary (for background)
-$primary-color_255: rgb(255, 255, 255);
-$primary-color_250: rgb(250, 250, 250);
-$primary-color_230: rgb(230, 230, 230);
-$primary-color_200: rgb(200, 200, 200);
-$primary-color_180: rgb(180, 180, 180);
-$primary-color_150: rgb(150, 150, 150);
-$primary-color_100: rgb(100, 100, 100);
-$primary-color_80: rgb(80, 80, 80);
-$primary-color_50: rgb(50, 50, 50);
-$primary-color_40: rgb(40, 40, 40);
-$primary-color_30: rgb(30, 30, 30);
-$primary-color_20: rgb(20, 20, 20);
-$primary-color_10: rgb(10, 10, 10);
-// Colors Secondary (for foreground)
-$secondary-color_255: rgb(255, 255, 255);
-$secondary-color_250: rgb(250, 250, 250);
-$secondary-color_230: rgb(230, 230, 230);
-$secondary-color_180: rgb(180, 180, 180);
-$secondary-color_200: rgb(200, 200, 200);
-$secondary-color_150: rgb(150, 150, 150);
-$secondary-color_100: rgb(100, 100, 100);
-$secondary-color_80: rgb(80, 80, 80);
-$secondary-color_50: rgb(50, 50, 50);
-$secondary-color_40: rgb(40, 40, 40);
-$secondary-color_30: rgb(30, 30, 30);
-$secondary-color_15: rgb(15, 15, 15);
+// Color variables
+@use "../base/colors" as *;
+
 // Fonts
 $font-genos: "Genos", sans-serif;
 $font-aldrich: "Aldrich", sans-serif;
@@ -35,7 +12,7 @@ $font-exo2: "Exo 2", sans-serif;
 
 $section-heading-size: 2.5rem;
 
-$sideNav-bg-color: $primary-color_250;
+$sideNav-bg-color: $color_rgb_250;
 
 //* Maps
 $sideNav-widths: (

@@ -43,6 +43,9 @@
                margin: 0 0.6rem;
             }
          }
+         &--copyright {
+            color: base.$color_rgb_120;
+         }
       }
    }
 }
@@ -81,6 +84,18 @@
          &--static,
          &--react {
             width: 85% !important;
+         }
+      }
+   }
+
+   //* Footer Section
+   .footer {
+      &__row {
+         &--copyright {
+            font-size: 0.9rem;
+            span {
+               font-size: 1.1rem;
+            }
          }
       }
    }
