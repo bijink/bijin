@@ -170,7 +170,7 @@
    &__fade-shadow {
       background-image: linear-gradient(180deg, transparent, transparent, base.$color_rgb_30);
       height: 15vh;
-      margin: 0 0 -1rem 0;
+      margin: 0 0 -1.05rem 0;
    }
 }
 
@@ -330,10 +330,10 @@
          &:hover > .carousel-item--title {
             visibility: visible;
             height: 40px;
-            background-color: rgb(22, 22, 22, 0.8);
+            background-color: rgb(20, 20, 20, 0.8);
             color: base.$color_rgb_200;
             &:hover {
-               background-color: rgb(22, 22, 22, 0.96);
+               background-color: rgb(20, 20, 20, 0.96);
             }
             .link-icon {
                color: base.$color_rgb_200;
@@ -354,6 +354,7 @@
    &__row {
       background-color: inherit;
       height: inherit;
+      margin-bottom: 0 !important;
       &--social-links {
          background-color: inherit;
          height: inherit;

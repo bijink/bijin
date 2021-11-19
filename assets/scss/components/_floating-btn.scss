@@ -14,6 +14,7 @@
       justify-content: center !important;
       align-items: center !important;
       background-color: base.$color_rgb_50 !important;
+      cursor: pointer !important;
       .material-icons {
          color: base.$color_rgb_150 !important;
          font-size: 2rem !important;
@@ -26,31 +27,34 @@
       > * {
          margin: 0.6rem 0 0 0 !important;
       }
-   }
-   &--home,
-   &--about,
-   &--services,
-   &--works {
-      width: 36px !important;
-      height: 36px !important;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      background-color: base.$color_rgb_150 !important;
-      .material-icons {
+      &--home,
+      &--about,
+      &--services,
+      &--works {
+         width: 36px !important;
+         height: 36px !important;
+         display: flex !important;
+         justify-content: center !important;
+         align-items: center !important;
          margin: 0 !important;
-         width: inherit !important;
-         display: inline-block !important;
-         text-align: center !important;
-         color: base.$color_rgb_40 !important;
-         font-size: 1.4rem !important;
+         padding: 0 !important;
+         background-color: base.$color_rgb_150 !important;
+         .icon {
+            margin: 0 !important;
+            color: base.$color_rgb_40 !important;
+            font-size: 1.4rem !important;
+            fill: base.$color_rgb_40 !important;
+         }
       }
-   }
-   &--home {
-      .material-icons {
-         font-size: 1.6rem !important;
+      &--home {
+         .icon {
+            font-size: 1.65rem !important;
+         }
+      }
+      &--about {
+         .icon {
+            width: 1.4rem !important;
+         }
       }
    }
 }
@@ -66,19 +70,27 @@
             font-size: 1.8rem !important;
          }
       }
-      &--home,
-      &--about,
-      &--services,
-      &--works {
-         width: 32px !important;
-         height: 32px !important;
-         .material-icons {
-            font-size: 1.2rem !important;
+      &__floating-btn {
+         &--home,
+         &--about,
+         &--services,
+         &--works {
+            width: 32px !important;
+            height: 32px !important;
+            .icon {
+               font-size: 1.2rem !important;
+            }
          }
-      }
-      &--home {
-         .material-icons {
-            font-size: 1.5rem !important;
+         &--home {
+            .icon {
+               font-size: 1.5rem !important;
+            }
+         }
+         &--about {
+            .icon {
+               width: 1.2rem !important;
+               margin-left: 0.8px !important;
+            }
          }
       }
    }
