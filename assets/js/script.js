@@ -1,8 +1,14 @@
 //* Materialize jQuery *//
 
-$(document).ready(function () {
+$(document).ready(() => {
    $('.sidenav').sidenav({
-      'preventScrolling': false
+      'preventScrolling': false,
+      onOpenEnd: () => {
+         $(".home__profile-intro").css("opacity", "0");
+      },
+      onCloseStart: () => {
+         $(".home__profile-intro").css("opacity", "1");
+      }
    });
    $('.fixed-action-btn').floatingActionButton({
       'direction': 'bottom',
