@@ -30,6 +30,9 @@
             letter-spacing: 0.5rem;
             cursor: default;
             font-family: base.$font-genos !important;
+            span {
+               font-size: 1.8rem;
+            }
          }
       }
       &__right {
@@ -187,6 +190,114 @@
       text-align: justify;
       font-size: 1.3rem;
       font-family: base.$font-exo2;
+      &--text {
+         .crossroads {
+            background-color: base.$color_crossroads_black;
+            color: base.$color_rgb_240;
+            font-family: base.$font-frankRL;
+            font-size: 1.2rem;
+            font-weight: 500;
+            display: inline-block;
+            line-height: 1rem;
+            &--roads {
+               background-color: base.$color_crossroads_red;
+               color: base.$color_rgb_0;
+               display: inherit;
+               line-height: inherit;
+            }
+         }
+         .youtube {
+            font-family: base.$font-fjallaO;
+            color: base.$color_rgb_230;
+            font-size: 1.2rem;
+            &--tube {
+               background-color: base.$color_youtube_red;
+               color: base.$color_rgb_0;
+               border-radius: 20%;
+               display: inline-block;
+               line-height: 1.5rem;
+               margin: 0 0.15rem;
+               padding: 0 0.1rem;
+            }
+         }
+         .google {
+            font-family: base.$font-josefinS;
+            font-weight: 500;
+            > :nth-child(1)/*G*/ {
+               color: base.$color_google_blue;
+               font-family: base.$font-outfit !important;
+            }
+            > :nth-child(2)/*o*/ {
+               color: base.$color_google_red;
+            }
+            > :nth-child(3)/*o*/ {
+               color: base.$color_google_yellow;
+            }
+            > :nth-child(4)/*g*/ {
+               color: base.$color_google_blue;
+            }
+            > :nth-child(5)/*l*/ {
+               color: base.$color_google_green;
+            }
+            > :nth-child(6)/*e*/ {
+               color: base.$color_google_red;
+            }
+         }
+         .stackoverflow {
+            font-family: base.$font-barlow;
+            font-weight: 500;
+            color: base.$color_stackoverflow_orange;
+            &--overflow {
+               font-weight: 600;
+               color: base.$color_rgb_230;
+            }
+            &--sc {
+               font-family: base.$font-redHD !important;
+            }
+            &--tfl {
+               font-family: base.$font-ubuntuC !important;
+            }
+         }
+         .mdn {
+            font-family: base.$font-zillaS;
+            font-weight: 500;
+            background-color: base.$color_mdn_black;
+            display: inline-block;
+            line-height: 1.3rem;
+            color: base.$color_rgb_240;
+            padding: 0 0.1rem;
+         }
+         .sololearn {
+            font-family: base.$font-baloo2;
+            font-weight: 500;
+            &--sol {
+               color: base.$color_sololearn_blue;
+            }
+            &--o-logo/* img */ {
+               width: 0.65rem;
+            }
+            &--learn {
+               color: base.$color_sololearn_gray;
+            }
+            &--rn {
+               font-family: base.$font-museoModerno !important;
+               font-size: 1.2rem;
+            }
+         }
+         .w3s {
+            font-family: base.$font-museoModerno;
+            font-weight: 500;
+            color: base.$color_w3s_green;
+            &--w {
+               font-family: base.$font-odibeeS !important;
+               font-size: 1.4rem;
+            }
+            &--h {
+               font-family: base.$font-oxanium !important;
+               font-weight: 600;
+            }
+         }
+      }
    }
    &__chips {
       font-family: base.$font-exo2;

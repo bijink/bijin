@@ -1,14 +1,12 @@
 @use "sass:map";
-@forward "../base/colors";
+@forward "colors";
+@forward "fonts";
 
 //* Variables
 // Color variables
-@use "../base/colors" as *;
-
-// Fonts
-$font-genos: "Genos", sans-serif;
-$font-aldrich: "Aldrich", sans-serif;
-$font-exo2: "Exo 2", sans-serif;
+@use "colors" as *;
+// Font variables
+@use "fonts" as *;
 
 $section-heading-size: 2.5rem;
 
