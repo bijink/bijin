@@ -1,6 +1,6 @@
 /** Google Fonts **/
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Genos:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Ubuntu+Condensed&display=swap");
@@ -115,10 +115,10 @@ html {
   color: #c8c8c8;
   cursor: pointer;
 }
-.header__navbar__left--sidebar-trigger-btn .material-icons {
-  font-size: 2.3rem;
+.header__navbar__left--sidebar-trigger-btn .icon {
+  font-size: 1.5rem;
 }
-.header__navbar__left--sidebar-trigger-btn .material-icons:hover {
+.header__navbar__left--sidebar-trigger-btn .icon:hover {
   color: #fafafa;
 }
 .header__navbar__left--name-logo {
@@ -262,20 +262,26 @@ html {
   font-size: 1.3rem;
   font-family: "Exo 2", sans-serif;
 }
-.about__desc--text .crossroads {
-  background-color: rgba(0, 0, 0, 0.4);
+.about__desc::first-letter {
+  color: white;
+  font-weight: 700;
+}
+.about__desc--text .brototype {
   color: #f0f0f0;
-  font-family: "Frank Ruhl Libre", serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   display: inline-block;
-  line-height: 1rem;
+  line-height: 1.05rem;
 }
-.about__desc--text .crossroads--roads {
-  background-color: rgba(216, 35, 44, 0.9);
+.about__desc--text .brototype--bro {
+  background-color: #e6e6e6;
+  font-weight: 700;
   color: black;
   display: inherit;
   line-height: inherit;
+  padding: 0 0.1rem;
+  margin: 0 0.1rem 0 0;
 }
 .about__desc--text .youtube {
   font-family: "Fjalla One", sans-serif;
@@ -336,20 +342,21 @@ html {
   display: inline-block;
   line-height: 1.3rem;
   color: #f0f0f0;
-  padding: 0 0.1rem;
+  padding: 0 0.14rem;
 }
 .about__desc--text .sololearn {
   font-family: "Baloo 2", cursive;
   font-weight: 500;
+  display: inline-block;
 }
 .about__desc--text .sololearn--sol {
   color: #6b859c;
 }
 .about__desc--text .sololearn--o-logo {
-  width: 0.65rem;
+  width: 0.6rem;
 }
 .about__desc--text .sololearn--learn {
-  color: #b4b4b4;
+  color: #aaaaaa;
 }
 .about__desc--text .sololearn--rn {
   font-family: "MuseoModerno", cursive !important;
@@ -399,6 +406,10 @@ html {
   text-align: justify;
   font-size: 1.3rem;
   font-family: "Exo 2", sans-serif;
+}
+.services__desc::first-letter {
+  color: white;
+  font-weight: 700;
 }
 .services__card {
   display: flex;

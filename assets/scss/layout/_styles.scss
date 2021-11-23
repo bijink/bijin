@@ -16,8 +16,9 @@
             display: unset !important;
             color: base.$color_rgb_200;
             cursor: pointer;
-            .material-icons {
-               font-size: 2.3rem;
+            .icon {
+               // font-size: 2.3rem;
+               font-size: 1.5rem;
                &:hover {
                   color: base.$color_rgb_250;
                }
@@ -190,20 +191,26 @@
       text-align: justify;
       font-size: 1.3rem;
       font-family: base.$font-exo2;
+      &::first-letter {
+         color: base.$color_rgb_255;
+         font-weight: 700;
+      }
       &--text {
-         .crossroads {
-            background-color: base.$color_crossroads_black;
+         .brototype {
             color: base.$color_rgb_240;
-            font-family: base.$font-frankRL;
+            font-family: base.$font-kanit;
             font-size: 1.2rem;
             font-weight: 500;
             display: inline-block;
-            line-height: 1rem;
-            &--roads {
-               background-color: base.$color_crossroads_red;
+            line-height: 1.05rem;
+            &--bro {
+               background-color: base.$color_rgb_230;
+               font-weight: 700;
                color: base.$color_rgb_0;
                display: inherit;
                line-height: inherit;
+               padding: 0 0.1rem;
+               margin: 0 0.1rem 0 0;
             }
          }
          .youtube {
@@ -265,16 +272,17 @@
             display: inline-block;
             line-height: 1.3rem;
             color: base.$color_rgb_240;
-            padding: 0 0.1rem;
+            padding: 0 0.14rem;
          }
          .sololearn {
             font-family: base.$font-baloo2;
             font-weight: 500;
+            display: inline-block;
             &--sol {
                color: base.$color_sololearn_blue;
             }
             &--o-logo/* img */ {
-               width: 0.65rem;
+               width: 0.6rem;
             }
             &--learn {
                color: base.$color_sololearn_gray;
@@ -333,6 +341,10 @@
       text-align: justify;
       font-size: 1.3rem;
       font-family: base.$font-exo2;
+      &::first-letter {
+         color: base.$color_rgb_255;
+         font-weight: 700;
+      }
    }
    &__card {
       display: flex;
