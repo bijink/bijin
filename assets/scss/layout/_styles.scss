@@ -191,11 +191,11 @@
       text-align: justify;
       font-size: 1.3rem;
       font-family: base.$font-exo2;
-      &::first-letter {
-         color: base.$color_rgb_255;
-         font-weight: 700;
-      }
       &--text {
+         &::first-letter {
+            color: base.$color_rgb_255;
+            font-weight: 600;
+         }
          .brototype {
             color: base.$color_rgb_240;
             font-family: base.$font-kanit;
@@ -337,23 +337,25 @@
       font-size: base.$section-heading-size;
       margin: 3rem 0;
    }
-   &__desc {
+   &__desc1 {
       text-align: justify;
       font-size: 1.3rem;
       font-family: base.$font-exo2;
-      &::first-letter {
-         color: base.$color_rgb_255;
-         font-weight: 700;
+      &--text {
+         &::first-letter {
+            color: base.$color_rgb_255;
+            font-weight: 600;
+         }
       }
    }
    &__card {
       display: flex;
       justify-content: space-between;
-      margin: 4rem 0 0 0;
+      margin: 3rem 0;
       height: 100%;
       &--static,
       &--react {
-         margin: 0 1rem !important;
+         margin: 0 5% !important;
          background-color: transparent !important;
          box-shadow: none !important;
          border-radius: 0.6rem !important;
@@ -401,6 +403,23 @@
       &--static {
          .card-image {
             padding: 0 1rem;
+         }
+      }
+   }
+   &__desc2 {
+      text-align: justify;
+      font-size: 1.3rem;
+      font-family: base.$font-exo2;
+      &--text {
+         .inline-block-span {
+            display: inline-block;
+            .link-icon {
+               .icon {
+                  width: 0.7rem;
+                  fill: #039be5;
+                  margin: 0 0 0 -0.2rem;
+               }
+            }
          }
       }
    }

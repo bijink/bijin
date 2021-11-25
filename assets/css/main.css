@@ -262,9 +262,9 @@ html {
   font-size: 1.3rem;
   font-family: "Exo 2", sans-serif;
 }
-.about__desc::first-letter {
+.about__desc--text::first-letter {
   color: white;
-  font-weight: 700;
+  font-weight: 600;
 }
 .about__desc--text .brototype {
   color: #f0f0f0;
@@ -402,23 +402,23 @@ html {
   font-size: 2.5rem;
   margin: 3rem 0;
 }
-.services__desc {
+.services__desc1 {
   text-align: justify;
   font-size: 1.3rem;
   font-family: "Exo 2", sans-serif;
 }
-.services__desc::first-letter {
+.services__desc1--text::first-letter {
   color: white;
-  font-weight: 700;
+  font-weight: 600;
 }
 .services__card {
   display: flex;
   justify-content: space-between;
-  margin: 4rem 0 0 0;
+  margin: 3rem 0;
   height: 100%;
 }
 .services__card--static, .services__card--react {
-  margin: 0 1rem !important;
+  margin: 0 5% !important;
   background-color: transparent !important;
   box-shadow: none !important;
   border-radius: 0.6rem !important;
@@ -465,6 +465,19 @@ html {
 }
 .services__card--static .card-image {
   padding: 0 1rem;
+}
+.services__desc2 {
+  text-align: justify;
+  font-size: 1.3rem;
+  font-family: "Exo 2", sans-serif;
+}
+.services__desc2--text .inline-block-span {
+  display: inline-block;
+}
+.services__desc2--text .inline-block-span .link-icon .icon {
+  width: 0.7rem;
+  fill: #039be5;
+  margin: 0 0 0 -0.2rem;
 }
 
 .works {
