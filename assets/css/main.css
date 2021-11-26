@@ -266,6 +266,9 @@ html {
   color: white;
   font-weight: 600;
 }
+.about__desc--text .inline-block-span {
+  display: inline-block;
+}
 .about__desc--text .brototype {
   color: #f0f0f0;
   font-family: "Kanit", sans-serif;
@@ -287,13 +290,15 @@ html {
   font-family: "Fjalla One", sans-serif;
   color: #e6e6e6;
   font-size: 1.2rem;
+  display: inline-block;
+  line-height: 1.5rem;
 }
 .about__desc--text .youtube--tube {
   background-color: rgba(255, 0, 0, 0.75);
   color: black;
   border-radius: 20%;
-  display: inline-block;
-  line-height: 1.5rem;
+  display: inherit;
+  line-height: inherit;
   margin: 0 0.15rem;
   padding: 0 0.1rem;
 }
@@ -375,23 +380,6 @@ html {
   font-family: "Oxanium", cursive !important;
   font-weight: 600;
 }
-.about__chips {
-  font-family: "Exo 2", sans-serif;
-  margin: 2rem 0 0 0;
-}
-.about__chips .chip {
-  margin: 0 1rem 0.5rem 0;
-  overflow: hidden;
-  background-image: linear-gradient(90deg, #282828, #b4b4b4);
-  color: #0f0f0f;
-}
-.about__chips .chip img {
-  background-image: linear-gradient(90deg, #1e1e1e, transparent);
-  padding: 4px;
-}
-.about__chips .react img {
-  padding: 5px;
-}
 
 .services {
   padding: 4rem 0 0 0;
@@ -410,6 +398,9 @@ html {
 .services__desc1--text::first-letter {
   color: white;
   font-weight: 600;
+}
+.services__desc1--text .skills-text {
+  font-weight: 700;
 }
 .services__card {
   display: flex;

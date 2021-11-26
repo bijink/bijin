@@ -196,6 +196,9 @@
             color: base.$color_rgb_255;
             font-weight: 600;
          }
+         .inline-block-span {
+            display: inline-block;
+         }
          .brototype {
             color: base.$color_rgb_240;
             font-family: base.$font-kanit;
@@ -217,12 +220,14 @@
             font-family: base.$font-fjallaO;
             color: base.$color_rgb_230;
             font-size: 1.2rem;
+            display: inline-block;
+            line-height: 1.5rem;
             &--tube {
                background-color: base.$color_youtube_red;
                color: base.$color_rgb_0;
                border-radius: 20%;
-               display: inline-block;
-               line-height: 1.5rem;
+               display: inherit;
+               line-height: inherit;
                margin: 0 0.15rem;
                padding: 0 0.1rem;
             }
@@ -307,25 +312,6 @@
          }
       }
    }
-   &__chips {
-      font-family: base.$font-exo2;
-      margin: 2rem 0 0 0;
-      .chip {
-         margin: 0 1rem 0.5rem 0;
-         overflow: hidden;
-         background-image: linear-gradient(90deg, base.$color_rgb_40, base.$color_rgb_180);
-         color: base.$color_rgb_15;
-         img {
-            background-image: linear-gradient(90deg, base.$color_rgb_30, transparent);
-            padding: 4px;
-         }
-      }
-      .react {
-         img {
-            padding: 5px;
-         }
-      }
-   }
 }
 
 //* Services Section
@@ -345,6 +331,9 @@
          &::first-letter {
             color: base.$color_rgb_255;
             font-weight: 600;
+         }
+         .skills-text {
+            font-weight: 700;
          }
       }
    }
@@ -416,7 +405,7 @@
             .link-icon {
                .icon {
                   width: 0.7rem;
-                  fill: #039be5;
+                  fill: rgb(3, 155, 229);
                   margin: 0 0 0 -0.2rem;
                }
             }
