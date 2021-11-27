@@ -2,10 +2,14 @@
 
 .fixed-action-btn {
    width: fit-content !important;
+   height: 0 !important;
    position: absolute !important;
    top: 11rem !important;
    right: 0.8rem !important;
    z-index: 998 !important;
+   &.direction-bottom {
+      padding: 0 !important;
+   }
    &__toggle-btn {
       width: 50px !important;
       height: 50px !important;

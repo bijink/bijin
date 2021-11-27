@@ -13,20 +13,15 @@ $(document).ready(() => {
    $('.fixed-action-btn').floatingActionButton({
       'direction': 'bottom',
       'hoverEnabled': false,
-      // 'toolbarEnabled': true,
-      // 'instance': close(),
    });
    $('.carousel').carousel({
-      // 'numVisible': 4,
-      // 'noWrap': true,
       'indicators': true,
       'shift': 70,
       'dist': -50,
-      // 'padding': 20,
+      'padding': 60,
    });
    $('.carousel').carousel('set', 2);
    $('.scrollspy').scrollSpy({
-      // 'throttle': 100,
       'scrollOffset': 0,
    });
 });
@@ -34,17 +29,17 @@ $(document).ready(() => {
 
 //* Custom jQuery *//
 
-// // To show sideBar like popUp on startUp
-// setTimeout(() => {
-//    $('#slide-out').addClass('sidenav-fixed');
-// }, 300);
-// setTimeout(() => {
-//    $('#slide-out').removeClass('sidenav-fixed');
-// }, 1200);
+// To show sideBar like popUp on startUp
+setTimeout(() => {
+   $('#slide-out').addClass('sidenav-fixed');
+}, 1000);
+setTimeout(() => {
+   $('#slide-out').removeClass('sidenav-fixed');
+}, 2300);
 
 {
    const toggle_btn = $('.fixed-action-btn__toggle-btn');
-   const floating_btn = $('.fixed-action-btn__floating-btn > li');
+   const floating_btn = $('.fixed-action-btn__floating-btn');
    const icon = $('.fixed-action-btn__toggle-btn > .menu-btn');
 
    let state = false;
