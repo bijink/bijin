@@ -37,6 +37,7 @@ setTimeout(() => {
    $('#slide-out').removeClass('sidenav-fixed');
 }, 2300);
 
+// Functions for floating action btn
 {
    const toggle_btn = $('.fixed-action-btn__toggle-btn');
    const floating_btn = $('.fixed-action-btn__floating-btn');
